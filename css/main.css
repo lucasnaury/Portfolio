@@ -1,0 +1,641 @@
+/*****COLORS*****/
+/*****FONT WEIGHT*****/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #151515;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+nav {
+  z-index: 10;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding: 0 8vw;
+  background-color: #1C1C1C;
+  color: white;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+nav h1 span {
+  font-weight: 700;
+}
+
+nav .pages a {
+  display: inline-block;
+  margin-left: 2vw;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+nav .pages a span {
+  padding-bottom: 8px;
+  transition: border-bottom 100ms ease-out;
+}
+
+nav .pages a span:hover {
+  border-bottom: #06d6a0 2px solid;
+}
+
+nav .hamburgerToggle {
+  visibility: hidden;
+  display: none;
+  width: 20px;
+  height: 17px;
+  align-self: center;
+  background: transparent;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav .hamburgerToggle .line {
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transition: all 0.5s cubic-bezier(0.5, 0.28, 0, 1);
+  transform-origin: center;
+}
+
+nav .hamburgerToggle .line:nth-child(2) {
+  margin: 4px 0px;
+}
+
+nav .hamburgerToggle.active .line:nth-child(1) {
+  transform: translateY(7px) rotate(-135deg);
+}
+
+nav .hamburgerToggle.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+nav .hamburgerToggle.active .line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.header-section {
+  margin: 70px 8vw 0 8vw;
+  width: 84vw;
+  height: calc(100vh - 70px);
+}
+
+.header-section::before {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 45% 50px;
+}
+
+.header-section::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  background-image: linear-gradient(180deg, rgba(21, 21, 21, 0) 0%, rgba(21, 21, 21, 0) 50%, #151515 95%);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header-section .title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-section .title h1 {
+  margin: 0;
+  font-size: 120px;
+  font-weight: 550;
+  color: #06d6a0;
+  line-height: 140px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-section .title h2 {
+  margin: 20px 10px;
+  font-size: 35px;
+}
+
+.header-section .scroll-down-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -10px);
+  width: 40px;
+  opacity: 0.7;
+}
+
+.about_me-section {
+  margin: 70px 8vw 0 8vw;
+  position: relative;
+}
+
+.about_me-section #about-me {
+  content: "";
+  position: absolute;
+  top: calc(-8vw - 70px);
+}
+
+.about_me-section .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: calc(8vw + 30px) 0 5vw 0;
+}
+
+.about_me-section .header .image {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.about_me-section .header .image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/about.jpg");
+  filter: brightness(0.25);
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about_me-section .header .image h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  text-align: center;
+  margin: 0;
+  font-size: 150px;
+  font-weight: 700;
+  text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about_me-section .header .image h1 .ligne {
+  content: "";
+  position: relative;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 9vw;
+  height: 4px;
+  background: #06d6a0;
+}
+
+.about_me-section .header .image h2 {
+  position: absolute;
+  width: 90vw;
+  top: calc(50% + 140px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about_me-section .header .image h2 em {
+  color: #06d6a0;
+}
+
+.about_me-section .content {
+  margin: 0 17vw;
+}
+
+.about_me-section .content p {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: justify;
+}
+
+.portfolio-section {
+  margin: 0 8vw 0 8vw;
+  position: relative;
+}
+
+.portfolio-section #portfolio {
+  content: "";
+  position: absolute;
+  top: -8.5vw;
+}
+
+.portfolio-section .title {
+  margin: 8.5vw 0 8.5vw 0;
+}
+
+.portfolio-section .title h1 {
+  font-size: 5vw;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+.portfolio-section .title h1 .ligne {
+  content: "";
+  position: relative;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 9vw;
+  height: 4px;
+  background: #06d6a0;
+}
+
+.portfolio-section .projects .project h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.portfolio-section .projects .project h2 {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.portfolio-section .projects .project .grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  grid-auto-flow: dense;
+  grid-auto-rows: 1fr;
+}
+
+.portfolio-section .projects .project .grid .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #1C1C1C;
+  overflow: hidden;
+}
+
+.portfolio-section .projects .project .grid .img.hover:hover .desc {
+  opacity: 1;
+}
+
+.portfolio-section .projects .project .grid .img.hover:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-section .projects .project .grid .img.large {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.portfolio-section .projects .project .grid .img.large:nth-child(n+2) {
+  grid-column-end: -1;
+}
+
+.portfolio-section .projects .project .grid .img.medium {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.portfolio-section .projects .project .grid .img.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.portfolio-section .projects .project .grid .img img {
+  transition: transform 300ms ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-section .projects .project .grid .img .desc {
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 20px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.portfolio-section .projects .project .grid .img .desc h1 {
+  padding: 0 5%;
+  margin: 0 0 20px 0;
+  text-shadow: black 0px 0px 5px;
+}
+
+.portfolio-section .projects .project .grid .img .desc h2 {
+  font-weight: 300;
+  color: white;
+  padding: 0 5%;
+  text-shadow: black 0px 0px 3px;
+}
+
+.portfolio-section .projects .project .grid .img .desc span {
+  font-weight: 300;
+  position: absolute;
+  bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-section .projects .project .grid .img.large .desc h1 {
+  font-size: 2.6vw;
+}
+
+.portfolio-section .projects .project .grid .img.large .desc h2 {
+  font-size: 1vw;
+}
+
+.portfolio-section .projects .project .grid .img.large .desc span {
+  font-size: 16px;
+}
+
+.portfolio-section .projects .project .grid .img.medium .desc h1 {
+  font-size: 2vw;
+  margin: 10px 0;
+}
+
+.portfolio-section .projects .project .grid .img.medium .desc h2 {
+  font-size: 0.8vw;
+}
+
+.portfolio-section .projects .project .grid .img.medium .desc span {
+  font-size: 13px;
+}
+
+.portfolio-section .projects .project .grid .img.small .desc h1 {
+  font-size: 1.875vw;
+}
+
+.portfolio-section .projects .project .grid .img.small .desc h2 {
+  font-size: 0.625vw;
+}
+
+.portfolio-section .projects .project .grid .img.small .desc span {
+  bottom: 10px;
+  font-size: 11px;
+}
+
+.portfolio-section .projects .project .seeMore {
+  display: flex;
+  width: 100%;
+  padding: 1vh 0;
+  margin-bottom: 6vh;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.portfolio-section .projects .project .seeMore a {
+  padding: 2vh 1vw;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.portfolio-section .projects .project .seeMore a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-section .projects .overlay {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  padding: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.portfolio-section .projects .overlay .close {
+  position: absolute;
+  cursor: pointer;
+  padding: 15px;
+  right: 8vw;
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.portfolio-section .projects .overlay img.NavigateNext {
+  position: fixed;
+  pointer-events: all;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  right: 8vw;
+  top: calc(50% - 130px);
+}
+
+.portfolio-section .projects .overlay img.NavigateBefore {
+  position: fixed;
+  pointer-events: all;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  left: 8vw;
+  top: calc(50% - 130px);
+}
+
+.portfolio-section .projects .overlay .overlayImg {
+  max-height: 65vh;
+  max-width: 84vw;
+}
+
+.portfolio-section .projects .overlay h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.portfolio-section .projects .overlay h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-section .projects .overlay p {
+  position: absolute;
+  bottom: 1vh;
+  margin-bottom: 0;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8vw;
+}
+
+.portfolio-section .projects .overlay em {
+  font-style: normal;
+}
+
+/*****MEDIA QUERIES*****/
+@media (max-width: 1200px) {
+  .header-section::before {
+    background-position: 65% -50px;
+  }
+  .header-section::after {
+    background-image: linear-gradient(180deg, rgba(21, 21, 21, 0) 0%, rgba(21, 21, 21, 0) 80%, #151515 95%);
+  }
+  .header-section .title {
+    top: 70%;
+  }
+  .header-section .title h1 {
+    font-size: 110px;
+    line-height: 120px;
+  }
+  .header-section .title h2 {
+    font-size: 25px;
+  }
+  .header-section .scroll-down-indicator {
+    transform: translate(-50%, -20px);
+    width: 4vw;
+  }
+  .portfolio-section .projects .project h1 {
+    font-size: 2.3vw;
+  }
+  .portfolio-section .projects .project h2 {
+    font-size: 1.5vw;
+  }
+  .portfolio-section .projects .project .grid .img.large .desc span {
+    font-size: 1.3vw;
+  }
+  .portfolio-section .projects .project .grid .img.medium .desc span {
+    font-size: 1.1vw;
+  }
+  .portfolio-section .projects .project .grid .img.small .desc span {
+    font-size: 0.9vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav .hamburgerToggle {
+    visibility: visible;
+    display: block;
+  }
+  nav .pages {
+    display: block;
+    visibility: visible;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  nav .pages.visible {
+    transition: transform 300ms ease-in-out;
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    top: 70px;
+    background: #1C1C1C;
+    border-top: 1px solid #151515;
+  }
+  nav .pages.visible a {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5vh 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    transition: background-color 300ms ease-in-out;
+  }
+  nav .pages.visible a:hover {
+    background-color: #242424;
+  }
+  nav .pages.visible a span {
+    font-size: 2vh;
+  }
+  nav .pages.visible a span:hover {
+    border: none;
+  }
+  .header-section::before {
+    background-position: 60%;
+    background-attachment: scroll;
+  }
+  .header-section::after {
+    background-image: linear-gradient(180deg, rgba(21, 21, 21, 0) 0%, rgba(21, 21, 21, 0) 85%, #151515 95%);
+  }
+  .header-section .title {
+    top: 75%;
+  }
+  .header-section .title h1 {
+    font-size: 12vw;
+    line-height: 13vw;
+  }
+  .header-section .title h2 {
+    font-size: 4vw;
+  }
+  .portfolio-section .projects .overlay h1 {
+    font-size: 3.6vw;
+  }
+  .portfolio-section .projects .overlay h2 {
+    font-size: 1.8vw;
+  }
+  .portfolio-section .projects .overlay .NavigateBefore {
+    left: 4vw;
+  }
+  .portfolio-section .projects .overlay .NavigateNext {
+    right: 4vw;
+  }
+  .portfolio-section .projects .project .grid .img.small .desc span, .portfolio-section .projects .project .grid .img.medium .desc span, .portfolio-section .projects .project .grid .img.large .desc span {
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .portfolio-section .projects .project h1 {
+    font-size: 18px;
+  }
+  .portfolio-section .projects .project h2 {
+    font-size: 12px;
+  }
+}
