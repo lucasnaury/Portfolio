@@ -26,9 +26,9 @@ $(document).ready(function () {
 
         selectedImg = $(this);
 
-        overlay.children('.overlayImg').attr('src', $(this).children('img').attr('src'));
-        overlay.children('h1').html($(this).children('.desc').children('h1').html());
-        overlay.children('h2').html($(this).children('.desc').children('h2').html());
+        overlay.children(".content").children('.overlayImg').attr('src', $(this).children('img').attr('src'));
+        overlay.children(".content").children('h1').html($(this).children('.desc').children('h1').html());
+        overlay.children(".content").children('h2').html($(this).children('.desc').children('h2').html());
       }
     });
 
@@ -67,18 +67,19 @@ $(document).ready(function () {
 
       var selectedImgContainers = selectedProject.children('.grid').children('.img');
 
+
       var index = selectedImgContainers.index(selectedImg) + way;
 
       if (index >= 0 && index < selectedImgContainers.length){
-        overlay.children('.overlayImg').attr('src', selectedImgContainers.eq(index).children('img').attr('src'));
-        overlay.children('h1').html(selectedImgContainers.eq(index).children('.desc').children('h1').html());
-        overlay.children('h2').html(selectedImgContainers.eq(index).children('.desc').children('h2').html());
+        overlay.children(".content").children('.overlayImg').attr('src', selectedImgContainers.eq(index).children('img').attr('src'));
+        overlay.children(".content").children('h1').html(selectedImgContainers.eq(index).children('.desc').children('h1').html());
+        overlay.children(".content").children('h2').html(selectedImgContainers.eq(index).children('.desc').children('h2').html());
         selectedImg = selectedImgContainers.eq(index);
       } else{
         index = 0
-        overlay.children('.overlayImg').attr('src', selectedProject.children('.grid').children('.img').eq(index).children('img').attr('src'));
-        overlay.children('h1').html(selectedImgContainers.eq(index).children('.desc').children('h1').html());
-        overlay.children('h2').html(selectedImgContainers.eq(index).children('.desc').children('h2').html());
+        overlay.children(".content").children('.overlayImg').attr('src', selectedProject.children('.grid').children('.img').eq(index).children('img').attr('src'));
+        overlay.children(".content").children('h1').html(selectedImgContainers.eq(index).children('.desc').children('h1').html());
+        overlay.children(".content").children('h2').html(selectedImgContainers.eq(index).children('.desc').children('h2').html());
         selectedImg = selectedImgContainers.eq(index);
       }
     }

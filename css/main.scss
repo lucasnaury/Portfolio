@@ -280,7 +280,7 @@ nav{
     margin: 8.5vw 0 8.5vw 0;
 
     h1{
-      font-size: 5vw;
+      font-size: 120px;
       font-weight: $bold;
       width: 100%;
       text-align: center;
@@ -307,13 +307,14 @@ nav{
 
       h1{
         color: $white;
-        font-size: 28px;
+        font-size: 34px;
         font-weight: $regular;
       }
       h2{
         margin-top: 0;
         color: transparentize($white, 0.4);
-        font-size: 18px;
+        font-size: 22px;
+        line-height: 28px;
         font-weight: $light;
       }
       .grid{
@@ -325,10 +326,11 @@ nav{
         grid-auto-flow: dense;
         grid-auto-rows: 1fr;
 
-        .img{
+        .img,
+        .video{
           position: relative;
-          width: 100%;
-          height: 100%;
+          //width: 100%;
+          //height: 100%;
           background: $grey;
           overflow:hidden;
 
@@ -361,7 +363,14 @@ nav{
           img{
             transition: transform 300ms ease-in-out;
             width: 100%;
-            height: 100%;;
+            height: 100%;
+            object-fit: cover;
+          }
+          video{
+            transition: transform 300ms ease-in-out;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
 
           .desc{
@@ -499,7 +508,7 @@ nav{
         width: 100px;
         height: 100px;
         right: 8vw;
-        top: calc(50% - 130px);
+        top: calc(50% - 40px);
       }
       img.NavigateBefore{
         position: fixed;
@@ -508,21 +517,32 @@ nav{
         width: 100px;
         height: 100px;
         left: 8vw;
-        top: calc(50% - 130px);
+        top: calc(50% - 40px);
       }
-      .overlayImg{
-        max-height: 65vh;
-        max-width: 84vw;
+      .content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .overlayImg{
+          width: 70%;
+        }
+        h1{
+          flex: 0 1 36px;
+          font-size: 36px;
+          margin-bottom: 0;
+        }
+        h2{
+          flex: 0 1 18px;
+          font-size: 18px;
+          font-weight: $light;
+          color: transparentize($white, 0.2);
+        }
       }
-      h1{
-        font-size: 36px;
-        margin-bottom: 0;
-      }
-      h2{
-        font-size: 18px;
-        font-weight: $light;
-        color: transparentize($white, 0.2);
-      }
+
       p{
         position: absolute;
         bottom: 1vh;
@@ -566,18 +586,46 @@ nav{
         width: 4vw;
       }
   }
-
+  .about_me-section{
+    margin-top: 100px ;
+    .header{
+      .image{
+        h1{
+          top: 60%;
+          font-size: 120px;
+          .ligne{
+            top: 10px;
+          }
+        }
+        h2{
+          font-size: 24px;
+        }
+      }
+    }
+    .content{
+      margin: 0 12vw;
+    }
+  }
   .portfolio-section{
+    margin-top: 150px ;
+    .title{
+      h1{
+        font-size: 120px;
+      }
+    }
     .projects{
       .project{
         h1{
-          font-size: 2.3vw;
+          font-size: 28px;
         }
         h2{
-          font-size: 1.5vw;
+          font-size: 18px;
         }
         .grid{
-          .img{
+          .img,
+          .video{
+            position: relative;
+
             &.large{
               .desc{
                 span{
@@ -599,6 +647,14 @@ nav{
                 }
               }
             }
+          }
+        }
+      }
+
+      .overlay{
+        .content{
+          .overlayImg{
+            width: 85%;
           }
         }
       }
@@ -691,10 +747,14 @@ nav{
         .NavigateNext{
           right: 4vw;
         }
+        .overlayImg{
+
+        }
       }
       .project{
         .grid{
-          .img.small,.img.medium,.img.large{
+          .img.small,.img.medium,.img.large,
+          .video.small,.video.medium,.video.large{
             .desc{
               span{
                 bottom: 5px;
@@ -707,25 +767,89 @@ nav{
   }
 }
 @media (max-width:800px){
+  .about_me-section{
+    .header{
+      .image{
+        h1{
+          top: 65%;
+          font-size: 95px;
+          .ligne{
+            top: 6px;
+          }
+        }
+      }
+    }
+    .content{
+      margin: 0 8vw;
+      p{
+        font-size: 18px;
+      }
+    }
+  }
   .portfolio-section{
+    .title{
+      h1{
+        font-size: 85px;
+      }
+
+    }
     .projects{
       .project{
         h1{
-          font-size: 18px;
+          font-size: 30px;
         }
         h2{
-          font-size: 12px;
+          font-size: 18px;
+        }
+      }
+      .overlay{
+        .overlayImg{
+          width: 90%;
         }
       }
     }
   }
 }
 @media (max-width:700px){
+  .about_me-section{
+    .header{
+      .image{
+        h1{
+          top: 65%;
+          font-size: 85px;
+          .ligne{
+            top: 6px;
+          }
+        }
+        h2{
+          font-size: 20px;
+        }
+      }
+    }
+  }
   .portfolio-section{
     .projects{
       .project{
-        .grid{
-
+      }
+      .overlay{
+        img.NavigateNext{
+          right: 45% !important;
+          top: 95% !important;
+          transform: translate(100%,-100%);
+          width: 70px !important;
+          height: 70px !important;
+        }
+        img.NavigateBefore{
+          left: 45% !important;
+          top: 95% !important;
+          transform: translate(-100%,-100%);
+          width: 70px !important;
+          height: 70px !important;
+        }
+        .content{
+          .overlayImg{
+            width: 100%;
+          }
         }
       }
     }
