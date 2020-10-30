@@ -40,7 +40,8 @@ nav{
 
   h1{
     font-size: 24px;
-    flex: 1;
+    width: auto;
+    flex: 1 1 auto;
     text-transform: uppercase;
     font-weight: $light;
 
@@ -175,7 +176,7 @@ nav{
 }
 
 .about_me-section{
-  margin: 70px 8vw 0 8vw;
+  margin: 70px 12vw 0 12vw;
   position: relative;
 
   #about-me{  //ANCHOR
@@ -267,7 +268,7 @@ nav{
 }
 
 .portfolio-section{
-  margin: 0 8vw 0 8vw;
+  margin: 0 12vw 0 12vw;
   position: relative;
 
   #portfolio{  //ANCHOR
@@ -669,7 +670,7 @@ nav{
     }
 
     .pages{
-      display: block;
+      display: none;
       visibility: visible;
       transform: scaleY(0);
       transform-origin: top;
@@ -801,6 +802,9 @@ nav{
         h2{
           font-size: 18px;
         }
+        .seeMore a{
+          font-size: 16px;
+        }
       }
       .overlay{
         .overlayImg{
@@ -826,6 +830,9 @@ nav{
         }
       }
     }
+    .content p{
+      font-size: 16px;
+    }
   }
   .portfolio-section{
     .projects{
@@ -850,6 +857,47 @@ nav{
           .overlayImg{
             width: 100%;
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width:500px){
+  .about_me-section{
+    .header{
+      margin-bottom: 50px;
+      .image{
+        width: 80vw;
+        height: 80vw;
+        h1{
+          top: 70%;
+          font-size: 65px;
+          .ligne{
+            top: 6px;
+          }
+        }
+        h2{
+          margin-top: 0;
+        }
+      }
+    }
+    .content{
+      margin: 0;
+    }
+  }
+  .portfolio-section{
+    .title{
+      h1{
+        font-size: 65px;
+      }
+    }
+    .projects{
+      .project{
+        h1{
+          font-size: 26px;
+        }
+        h2{
+          font-size: 16px;
         }
       }
     }

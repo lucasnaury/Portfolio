@@ -28,7 +28,8 @@ nav {
 
 nav h1 {
   font-size: 24px;
-  flex: 1;
+  width: auto;
+  flex: 1 1 auto;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -155,7 +156,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 }
 
 .about_me-section {
-  margin: 70px 8vw 0 8vw;
+  margin: 70px 12vw 0 12vw;
   position: relative;
 }
 
@@ -246,7 +247,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 }
 
 .portfolio-section {
-  margin: 0 8vw 0 8vw;
+  margin: 0 12vw 0 12vw;
   position: relative;
 }
 
@@ -633,7 +634,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
     display: block;
   }
   nav .pages {
-    display: block;
+    display: none;
     visibility: visible;
     transform: scaleY(0);
     transform-origin: top;
@@ -726,6 +727,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h2 {
     font-size: 18px;
   }
+  .portfolio-section .projects .project .seeMore a {
+    font-size: 16px;
+  }
   .portfolio-section .projects .overlay .overlayImg {
     width: 90%;
   }
@@ -741,6 +745,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
   .about_me-section .header .image h2 {
     font-size: 20px;
+  }
+  .about_me-section .content p {
+    font-size: 16px;
   }
   .portfolio-section .projects .overlay img.NavigateNext {
     right: 45% !important;
@@ -758,5 +765,37 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
   .portfolio-section .projects .overlay .content .overlayImg {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about_me-section .header {
+    margin-bottom: 50px;
+  }
+  .about_me-section .header .image {
+    width: 80vw;
+    height: 80vw;
+  }
+  .about_me-section .header .image h1 {
+    top: 70%;
+    font-size: 65px;
+  }
+  .about_me-section .header .image h1 .ligne {
+    top: 6px;
+  }
+  .about_me-section .header .image h2 {
+    margin-top: 0;
+  }
+  .about_me-section .content {
+    margin: 0;
+  }
+  .portfolio-section .title h1 {
+    font-size: 65px;
+  }
+  .portfolio-section .projects .project h1 {
+    font-size: 26px;
+  }
+  .portfolio-section .projects .project h2 {
+    font-size: 16px;
   }
 }
