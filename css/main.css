@@ -704,6 +704,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .header-section .title h2 {
     font-size: 2.5vw;
   }
+  .portfolio-section .projects .overlay {
+    top: 50px;
+  }
   .portfolio-section .projects .overlay h1 {
     font-size: 3.6vw;
   }
