@@ -294,6 +294,10 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   font-weight: 300;
 }
 
+.portfolio-section .projects .project h2.projectDesc {
+  text-align: justify;
+}
+
 .portfolio-section .projects .project .grid {
   display: grid;
   grid-gap: 10px;
@@ -626,6 +630,10 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .overlay .content .overlayImg {
     width: 85%;
   }
+  .portfolio-section .projects .overlay p {
+    bottom: 10px;
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -768,7 +776,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .about_me-section .header {
     margin-bottom: 50px;
   }
@@ -797,5 +805,30 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
   .portfolio-section .projects .project h2 {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about_me-section .header .image h1 {
+    top: 75%;
+    font-size: 55px;
+  }
+  .portfolio-section .title {
+    margin-bottom: 20vw;
+  }
+  .portfolio-section .title h1 {
+    font-size: 50px;
+  }
+  .portfolio-section .projects .project h1 {
+    font-size: 24px;
+  }
+  .portfolio-section .projects .project h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-device-width: 800px) {
+  .portfolio-section .projects .overlay p {
+    display: none;
   }
 }
