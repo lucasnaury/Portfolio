@@ -704,6 +704,12 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .header-section .title h2 {
     font-size: 2.5vw;
   }
+  .about_me-section #about-me {
+    top: calc(-8vw - 50px);
+  }
+  .portfolio-section #portfolio {
+    top: calc(-8vw - 50px);
+  }
   .portfolio-section .projects .overlay {
     top: 50px;
   }

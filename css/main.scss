@@ -746,8 +746,15 @@ nav{
       }
     }
   }
-
+  .about_me-section{
+    #about-me{  //ANCHOR
+      top: calc(-8vw - 50px);
+    }
+  }
   .portfolio-section{
+    #portfolio{  //ANCHOR
+      top: calc(-8vw - 50px);
+    }
     .projects{
       .overlay{
         top: 50px;
