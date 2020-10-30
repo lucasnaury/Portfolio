@@ -110,6 +110,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: 45% 50px;
 }
 
