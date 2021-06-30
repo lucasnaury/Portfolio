@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700" rel="stylesheet">
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/portfolio.js"></script>
   </head>
@@ -78,8 +78,8 @@
             réussir le niveau.
           </h2>
           <div class="grid">
-            <div class="img large hover"> <!--Ratio 1.33333333333-->
-              <img src= "img/Project1/MainMenu.jpg" alt="Main Menu">
+            <div class="imgContainer large hover"> <!--Ratio 1.33333333333-->
+              <img class="media" src= "img/Project1/MainMenu.jpg" alt="Main Menu">
               <div class="desc">
                 <h1>Ecran d'accueil</h1>
                 <h2>C'est la première chose que le joueur voit en lançant le jeu.</h2>
@@ -87,16 +87,16 @@
               </div>
             </div>
 
-            <div class="img medium hover"> <!--Ratio 0.88396811337-->
-              <img src="img/Project1/Options.jpg" alt="Options">
+            <div class="imgContainer medium hover"> <!--Ratio 0.88396811337-->
+              <img class="media" src="img/Project1/Options.jpg" alt="Options">
               <div class="desc">
                 <h1>Menu Options</h1>
                 <h2>À partir de ce menu, le joueur peut modifier ses contrôles, ses paramètres graphiques et le volume du jeu.</h2>
                 <span>Cliquer pour afficher en grand</span>
               </div>
             </div>
-            <div class="img medium hover"> <!--Ratio 1.79333333333-->
-              <img src="img/Project1/LevelSelect.jpg" alt="Level Select">
+            <div class="imgContainer medium hover"> <!--Ratio 1.79333333333-->
+              <img class="media" src="img/Project1/LevelSelect.jpg" alt="Level Select">
               <div class="desc">
                 <h1>Sélecteur de niveaux</h1>
                 <h2>Seul le dernier niveau non joué est accessible au joueur.</h2>
@@ -104,25 +104,24 @@
               </div>
             </div>
 
-            <div class="img large hover">
-              <!--<video width="100%" height="100%" autoplay loop src="img/5.mp4">-->
-              <img src="img/Project1/Blobby.gif" alt="Blobby">
+            <div class="imgContainer large hover">
+              <video class="media" width="100%" height="100%" autoplay loop src="img/Project1/Blobby.mp4" alt="Blobby"></video>
               <div class="desc">
                 <h1>Blobby - Le personnage qui rebondit</h1>
                 <h2>Le joueur est amené à rencontrer ce personnage qui permet au joueur de rebondir et ainsi accéder à des zones innaccessibles auparavant.</h2>
                 <span>Cliquer pour afficher en grand</span>
               </div>
             </div>
-            <div class="img medium hover">
-              <img src="img/Project1/Tutorial.gif" alt="Tutorial">
+            <div class="imgContainer medium hover">
+              <img class="media" src="img/Project1/Tutorial.gif" alt="Tutorial">
               <div class="desc">
                 <h1>Premier niveau du tutoriel</h1>
                 <h2>C'est le premier niveau que le joueur est amené à jouer. Il lui apprend les déplacements de base.</h2>
                 <span>Cliquer pour afficher en grand</span>
               </div>
             </div>
-            <div class="img medium hover">
-              <img src="img/Project1/Doubly.jpg" alt="Doubly">
+            <div class="imgContainer medium hover">
+              <img class="media" src="img/Project1/Doubly.jpg" alt="Doubly">
               <div class="desc">
                 <h1>Doubly - Le personnage aux multiples saut</h1>
                 <h2>C'est le premier personnage que le joueur rencontre. Il est capable de faire un double saut, et donc franchir des obstacles plus grands.</h2>
@@ -134,15 +133,15 @@
           <div class="seeMore"><a href="https://mega.nz/folder/w2QzBQRB#5Q7JnD5sLnz2xMKb0mm53A" target="_blank">Télécharger le jeu</a></div>
         </div>
         <div class="project">
-          <h1>Projet #2 - Workout Timer</h1>
+          <h1 class="ProjectTitle">Projet #2 - Workout Timer</h1>
           <h2>
             Application qui permet de planifier sa séance de sport. L'utilisateur choisit la durée, le temps de repos et le nombre de répétitions
             pour un exercice. L'application se charge alors d'afficher les comptes à rebours afin que l'utilisateur puisse se concentrer totalement
             sur sa séance de sport !
           </h2>
           <div class="grid">
-            <div class="img large hover"> <!--Ratio 1.33333333333-->
-              <img src= "img/Project2/Settings.jpg" alt="Settings">
+            <div class="imgContainer large hover"> <!--Ratio 1.33333333333-->
+              <img class="media" src= "img/Project2/Settings.jpg" alt="Settings">
               <div class="desc">
                 <h1>Ecran d'accueil</h1>
                 <h2>C'est la première page que l'utilisateur voit en lançant l'application. Il peut y remplir les données de son exercice.</h2>
@@ -150,16 +149,16 @@
               </div>
             </div>
 
-            <div class="img medium hover"> <!--Ratio 0.88396811337-->
-              <img src="img/Project2/TimePicker.jpg" alt="Time Picker">
+            <div class="imgContainer medium hover"> <!--Ratio 0.88396811337-->
+              <img class="media" src="img/Project2/TimePicker.jpg" alt="Time Picker">
               <div class="desc">
                 <h1>Time Picker</h1>
                 <h2>Utilisation d'une librairie JavaScript pour avoir un Time Picker.</h2>
                 <span>Cliquer pour afficher en grand</span>
               </div>
             </div>
-            <div class="img medium hover"> <!--Ratio 1.79333333333-->
-              <img src="img/Project2/SettingsCompleted.jpg" alt="Settings Completed">
+            <div class="imgContainer medium hover"> <!--Ratio 1.79333333333-->
+              <img class="media" src="img/Project2/SettingsCompleted.jpg" alt="Settings Completed">
               <div class="desc">
                 <h1>Paramètres remplis</h1>
                 <h2>Une fois les paramètres remplis, l'utilisateur peut cliquer sur "START" afin de lancer l'application.</h2>
@@ -167,8 +166,8 @@
               </div>
             </div>
 
-            <div class="img large hover">
-              <img src="img/Project2/InUse.gif" alt="Application">
+            <div class="imgContainer large hover">
+              <video class="media" width="100%" height="100%" autoplay loop src="img/Project2/InUse.mp4" alt="Application"></video>
               <div class="desc">
                 <h1>Application en marche</h1>
                 <h2>
@@ -178,16 +177,16 @@
                 <span>Cliquer pour afficher en grand</span>
               </div>
             </div>
-            <div class="img medium hover">
-              <img src="img/Project2/PracticeTime.jpg" alt="Rest Time">
+            <div class="imgContainer medium hover">
+              <img class="media" src="img/Project2/PracticeTime.jpg" alt="Rest Time">
               <div class="desc">
                 <h1>Practice Time</h1>
                 <h2>L'utilisateur réalise l'exercice durant le temps indiqué.</h2>
                 <span>Cliquer pour afficher en grand</span>
               </div>
             </div>
-            <div class="img medium hover">
-              <img src="img/Project2/RestTime.jpg" alt="Doubly">
+            <div class="imgContainer medium hover">
+              <img class="media" src="img/Project2/RestTime.jpg" alt="Doubly">
               <div class="desc">
                 <h1>Rest Time</h1>
                 <h2>L'utilisateur se repose durant le temps indiqué.</h2>
@@ -201,12 +200,23 @@
 
         <div class="overlay">
           <img src="img/close.png" class="close">
-          <img src="img/NavigateBefore.png" alt="<" class="NavigateBefore">
-          <img src="img/NavigateNext.png" alt=">" class="NavigateNext">
+
           <div class="content">
-            <img src="" class="overlayImg">
+            <div class="horizontal">
+              <img src="img/NavigateBefore.png" alt="<" class="NavigateBefore">
+              <div class="mediaContainer">
+                <img src="" class="overlayImg">
+                <video src="" class="overlayVid" autoplay loop>
+              </div>
+              <img src="img/NavigateNext.png" alt=">" class="NavigateNext">
+            </div>
             <h1></h1>
             <h2></h2>
+            <div class="bottomNav">
+              <img src="img/NavigateBefore.png" alt="<" class="NavigateBefore">
+              <img src="img/NavigateNext.png" alt=">" class="NavigateNext">
+            </div>
+
           </div>
           <p>Appuyer sur <em>Echap</em> pour quitter</p>
         </div>

@@ -16,6 +16,7 @@ body{
   padding: 0;
   margin: 0;
   background-color: $dark_grey;
+  overflow-x: hidden;
 }
 
 *{
@@ -317,7 +318,7 @@ nav{
         margin-top: 0;
         color: transparentize($white, 0.4);
         font-size: 22px;
-        line-height: 28px;
+        //line-height: 22px;
         font-weight: $light;
         &.projectDesc{
           text-align: justify;
@@ -332,7 +333,7 @@ nav{
         grid-auto-flow: dense;
         grid-auto-rows: 1fr;
 
-        .img,
+        .imgContainer,
         .video{
           position: relative;
           //width: 100%;
@@ -507,24 +508,6 @@ nav{
         height: 24px;
         fill: white;
       }
-      img.NavigateNext{
-        position: fixed;
-        pointer-events: all;
-        cursor: pointer;
-        width: 100px;
-        height: 100px;
-        right: 8vw;
-        top: calc(50% - 40px);
-      }
-      img.NavigateBefore{
-        position: fixed;
-        pointer-events: all;
-        cursor: pointer;
-        width: 100px;
-        height: 100px;
-        left: 8vw;
-        top: calc(50% - 40px);
-      }
       .content{
         height: 100%;
         width: 100%;
@@ -533,9 +516,56 @@ nav{
         align-items: center;
         justify-content: center;
 
-        .overlayImg{
-          width: 70%;
+        .horizontal{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+
+          .mediaContainer{
+            width: 70%;
+            min-height: 50vh;
+            position: relative;
+            overflow: hidden;
+
+            .overlayImg,
+            .overlayVid{
+              width: 100%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+
+            }
+          }
+
+          img.NavigateBefore,
+          img.NavigateNext{
+            pointer-events: all;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+          }
         }
+        .bottomNav{
+          display: none;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 20px;
+          width: 30%;
+          justify-content: space-around;
+          img.NavigateBefore,
+          img.NavigateNext{
+            pointer-events: all;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+
+
         h1{
           flex: 0 1 36px;
           font-size: 36px;
@@ -628,7 +658,7 @@ nav{
           font-size: 18px;
         }
         .grid{
-          .img,
+          .imgContainer,
           .video{
             position: relative;
 
@@ -658,11 +688,6 @@ nav{
       }
 
       .overlay{
-        .content{
-          .overlayImg{
-            width: 85%;
-          }
-        }
         p{
           bottom: 10px;
           font-size: 11px;
@@ -764,16 +789,15 @@ nav{
         h2{
           font-size: 1.8vw;
         }
-        .NavigateBefore{
-          left: 4vw;
-        }
+        .NavigateBefore,
         .NavigateNext{
-          right: 4vw;
+          width: 80px;
         }
+
       }
       .project{
         .grid{
-          .img.small,.img.medium,.img.large,
+          .imgContainer.small,.imgContainer.medium,.imgContainer.large,
           .video.small,.video.medium,.video.large{
             .desc{
               span{
@@ -826,7 +850,7 @@ nav{
         }
       }
       .overlay{
-        .overlayImg{
+        .mediaContainer{
           width: 90%;
         }
       }
@@ -855,28 +879,27 @@ nav{
   }
   .portfolio-section{
     .projects{
-      .project{
-      }
-      .overlay{
-        img.NavigateNext{
-          right: 45% !important;
-          top: 95% !important;
-          transform: translate(100%,-100%);
-          width: 70px !important;
-          height: 70px !important;
-        }
-        img.NavigateBefore{
-          left: 45% !important;
-          top: 95% !important;
-          transform: translate(-100%,-100%);
-          width: 70px !important;
-          height: 70px !important;
-        }
-        .content{
-          .overlayImg{
+      .overlay .content{
+        .horizontal{
+          img.NavigateBefore,
+          img.NavigateNext{
+            display: none;
+          }
+          .mediaContainer{
             width: 100%;
+            min-height: 32vh;
           }
         }
+
+        .bottomNav{
+          display: flex;
+          img.NavigateBefore,
+          img.NavigateNext{
+            width: 75px;
+            height: 75px;
+          }
+        }
+
       }
     }
   }
@@ -917,6 +940,13 @@ nav{
         }
         h2{
           font-size: 16px;
+        }
+      }
+      .overlay .content{
+        .horizontal{
+          .mediaContainer{
+            min-height: 25vh;
+          }
         }
       }
     }

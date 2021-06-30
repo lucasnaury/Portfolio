@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  var imgContainers = $('.img');
+  var imgContainers = $('.imgContainer');
 
   var overlay = $('.overlay');
   var closeOverlayBtn = $('.close');
@@ -26,17 +26,18 @@ $(document).ready(function () {
 
         selectedImg = $(this);
 
-        overlay.children(".content").children('.overlayImg').attr('src', $(this).children('img').attr('src'));
-        overlay.children(".content").children('h1').html($(this).children('.desc').children('h1').html());
-        overlay.children(".content").children('h2').html($(this).children('.desc').children('h2').html());
+        //Set the overlay media to the selectedItem
+        SetOverlayMedia($(this));
       }
     });
 
   function closeOverlay(){
     if (overlay.css('visibility') == 'visible'){
+      //Reset overlay objects
       selectedProject = null;
       selectedImg = null;
 
+      //Hide overlay and allow to click buttons again
       overlay.css('visibility','hidden');
       overlay.css('opacity','0');
       imgContainers.addClass('hover');
@@ -56,32 +57,48 @@ $(document).ready(function () {
   });
 
   navigateBefore.click(function(){
+    //Get previous element
     Navigate(-1);
   });
   navigateNext.click(function(){
+    //Get next element
     Navigate(1);
   });
 
   function Navigate (way){
-    if (overlay.css('visibility') == 'visible'){
+    if (overlay.css('visibility') == 'visible'){//If already visible
 
-      var selectedImgContainers = selectedProject.children('.grid').children('.img');
+      var selectedImgContainers = selectedProject.children('.grid').children('.imgContainer');
 
-
-      var index = selectedImgContainers.index(selectedImg) + way;
-
+      var index = selectedImgContainers.index(selectedImg) + way; //Move in the direction you want
+      //If in the list
       if (index >= 0 && index < selectedImgContainers.length){
-        overlay.children(".content").children('.overlayImg').attr('src', selectedImgContainers.eq(index).children('img').attr('src'));
-        overlay.children(".content").children('h1').html(selectedImgContainers.eq(index).children('.desc').children('h1').html());
-        overlay.children(".content").children('h2').html(selectedImgContainers.eq(index).children('.desc').children('h2').html());
+        //Set the overlay media to the next media in list
+        SetOverlayMedia(selectedImgContainers.eq(index));
         selectedImg = selectedImgContainers.eq(index);
-      } else{
-        index = 0
-        overlay.children(".content").children('.overlayImg').attr('src', selectedProject.children('.grid').children('.img').eq(index).children('img').attr('src'));
-        overlay.children(".content").children('h1').html(selectedImgContainers.eq(index).children('.desc').children('h1').html());
-        overlay.children(".content").children('h2').html(selectedImgContainers.eq(index).children('.desc').children('h2').html());
-        selectedImg = selectedImgContainers.eq(index);
+
+      } else{//If you reach the end or the beggining of the list
+        //Set the overlay media to the first media
+        SetOverlayMedia(selectedImgContainers.eq(0));
+        selectedImg = selectedImgContainers.eq(0);
       }
     }
+  }
+
+  function SetOverlayMedia(selectedImgContainer){
+    //If contains an img
+    if(selectedImgContainer.children(".media").prop('nodeName') == "IMG"){
+      //Show img and hide video
+      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayImg').attr('src', selectedImgContainer.children('img').attr('src'));
+      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayVid').attr('src', "");
+
+    }else{
+      //Show video and hide img
+      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayImg').attr('src', "");
+      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayVid').attr('src', selectedImgContainer.children('video').attr('src'));
+    }
+    //Set description and title
+    overlay.children(".content").children('h1').html(selectedImgContainer.children('.desc').children('h1').html());
+    overlay.children(".content").children('h2').html(selectedImgContainer.children('.desc').children('h2').html());
   }
 });

@@ -4,6 +4,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #151515;
+  overflow-x: hidden;
 }
 
 * {
@@ -291,7 +292,6 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   margin-top: 0;
   color: rgba(255, 255, 255, 0.6);
   font-size: 22px;
-  line-height: 28px;
   font-weight: 300;
 }
 
@@ -309,47 +309,47 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   grid-auto-rows: 1fr;
 }
 
-.portfolio-section .projects .project .grid .img,
+.portfolio-section .projects .project .grid .imgContainer,
 .portfolio-section .projects .project .grid .video {
   position: relative;
   background: #1C1C1C;
   overflow: hidden;
 }
 
-.portfolio-section .projects .project .grid .img.hover:hover .desc,
+.portfolio-section .projects .project .grid .imgContainer.hover:hover .desc,
 .portfolio-section .projects .project .grid .video.hover:hover .desc {
   opacity: 1;
 }
 
-.portfolio-section .projects .project .grid .img.hover:hover img,
+.portfolio-section .projects .project .grid .imgContainer.hover:hover img,
 .portfolio-section .projects .project .grid .video.hover:hover img {
   transform: scale(1.1);
 }
 
-.portfolio-section .projects .project .grid .img.large,
+.portfolio-section .projects .project .grid .imgContainer.large,
 .portfolio-section .projects .project .grid .video.large {
   grid-column: span 3;
   grid-row: span 2;
 }
 
-.portfolio-section .projects .project .grid .img.large:nth-child(n+2),
+.portfolio-section .projects .project .grid .imgContainer.large:nth-child(n+2),
 .portfolio-section .projects .project .grid .video.large:nth-child(n+2) {
   grid-column-end: -1;
 }
 
-.portfolio-section .projects .project .grid .img.medium,
+.portfolio-section .projects .project .grid .imgContainer.medium,
 .portfolio-section .projects .project .grid .video.medium {
   grid-column: span 2;
   grid-row: span 1;
 }
 
-.portfolio-section .projects .project .grid .img.small,
+.portfolio-section .projects .project .grid .imgContainer.small,
 .portfolio-section .projects .project .grid .video.small {
   grid-column: span 1;
   grid-row: span 1;
 }
 
-.portfolio-section .projects .project .grid .img img,
+.portfolio-section .projects .project .grid .imgContainer img,
 .portfolio-section .projects .project .grid .video img {
   transition: transform 300ms ease-in-out;
   width: 100%;
@@ -357,7 +357,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   object-fit: cover;
 }
 
-.portfolio-section .projects .project .grid .img video,
+.portfolio-section .projects .project .grid .imgContainer video,
 .portfolio-section .projects .project .grid .video video {
   transition: transform 300ms ease-in-out;
   width: 100%;
@@ -365,7 +365,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   object-fit: cover;
 }
 
-.portfolio-section .projects .project .grid .img .desc,
+.portfolio-section .projects .project .grid .imgContainer .desc,
 .portfolio-section .projects .project .grid .video .desc {
   z-index: 2;
   background: rgba(0, 0, 0, 0.8);
@@ -386,14 +386,14 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   opacity: 0;
 }
 
-.portfolio-section .projects .project .grid .img .desc h1,
+.portfolio-section .projects .project .grid .imgContainer .desc h1,
 .portfolio-section .projects .project .grid .video .desc h1 {
   padding: 0 5%;
   margin: 0 0 20px 0;
   text-shadow: black 0px 0px 5px;
 }
 
-.portfolio-section .projects .project .grid .img .desc h2,
+.portfolio-section .projects .project .grid .imgContainer .desc h2,
 .portfolio-section .projects .project .grid .video .desc h2 {
   font-weight: 300;
   color: white;
@@ -401,7 +401,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   text-shadow: black 0px 0px 3px;
 }
 
-.portfolio-section .projects .project .grid .img .desc span,
+.portfolio-section .projects .project .grid .imgContainer .desc span,
 .portfolio-section .projects .project .grid .video .desc span {
   font-weight: 300;
   position: absolute;
@@ -409,48 +409,48 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.portfolio-section .projects .project .grid .img.large .desc h1,
+.portfolio-section .projects .project .grid .imgContainer.large .desc h1,
 .portfolio-section .projects .project .grid .video.large .desc h1 {
   font-size: 2.6vw;
 }
 
-.portfolio-section .projects .project .grid .img.large .desc h2,
+.portfolio-section .projects .project .grid .imgContainer.large .desc h2,
 .portfolio-section .projects .project .grid .video.large .desc h2 {
   font-size: 1vw;
 }
 
-.portfolio-section .projects .project .grid .img.large .desc span,
+.portfolio-section .projects .project .grid .imgContainer.large .desc span,
 .portfolio-section .projects .project .grid .video.large .desc span {
   font-size: 16px;
 }
 
-.portfolio-section .projects .project .grid .img.medium .desc h1,
+.portfolio-section .projects .project .grid .imgContainer.medium .desc h1,
 .portfolio-section .projects .project .grid .video.medium .desc h1 {
   font-size: 2vw;
   margin: 10px 0;
 }
 
-.portfolio-section .projects .project .grid .img.medium .desc h2,
+.portfolio-section .projects .project .grid .imgContainer.medium .desc h2,
 .portfolio-section .projects .project .grid .video.medium .desc h2 {
   font-size: 0.8vw;
 }
 
-.portfolio-section .projects .project .grid .img.medium .desc span,
+.portfolio-section .projects .project .grid .imgContainer.medium .desc span,
 .portfolio-section .projects .project .grid .video.medium .desc span {
   font-size: 13px;
 }
 
-.portfolio-section .projects .project .grid .img.small .desc h1,
+.portfolio-section .projects .project .grid .imgContainer.small .desc h1,
 .portfolio-section .projects .project .grid .video.small .desc h1 {
   font-size: 1.875vw;
 }
 
-.portfolio-section .projects .project .grid .img.small .desc h2,
+.portfolio-section .projects .project .grid .imgContainer.small .desc h2,
 .portfolio-section .projects .project .grid .video.small .desc h2 {
   font-size: 0.625vw;
 }
 
-.portfolio-section .projects .project .grid .img.small .desc span,
+.portfolio-section .projects .project .grid .imgContainer.small .desc span,
 .portfolio-section .projects .project .grid .video.small .desc span {
   bottom: 10px;
   font-size: 11px;
@@ -503,26 +503,6 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   fill: white;
 }
 
-.portfolio-section .projects .overlay img.NavigateNext {
-  position: fixed;
-  pointer-events: all;
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  right: 8vw;
-  top: calc(50% - 40px);
-}
-
-.portfolio-section .projects .overlay img.NavigateBefore {
-  position: fixed;
-  pointer-events: all;
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  left: 8vw;
-  top: calc(50% - 40px);
-}
-
 .portfolio-section .projects .overlay .content {
   height: 100%;
   width: 100%;
@@ -532,8 +512,53 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   justify-content: center;
 }
 
-.portfolio-section .projects .overlay .content .overlayImg {
+.portfolio-section .projects .overlay .content .horizontal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portfolio-section .projects .overlay .content .horizontal .mediaContainer {
   width: 70%;
+  min-height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-section .projects .overlay .content .horizontal .mediaContainer .overlayImg,
+.portfolio-section .projects .overlay .content .horizontal .mediaContainer .overlayVid {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio-section .projects .overlay .content .horizontal img.NavigateBefore,
+.portfolio-section .projects .overlay .content .horizontal img.NavigateNext {
+  pointer-events: all;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.portfolio-section .projects .overlay .content .bottomNav {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.portfolio-section .projects .overlay .content .bottomNav img.NavigateBefore,
+.portfolio-section .projects .overlay .content .bottomNav img.NavigateNext {
+  pointer-events: all;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
 }
 
 .portfolio-section .projects .overlay .content h1 {
@@ -612,24 +637,21 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h2 {
     font-size: 18px;
   }
-  .portfolio-section .projects .project .grid .img,
+  .portfolio-section .projects .project .grid .imgContainer,
   .portfolio-section .projects .project .grid .video {
     position: relative;
   }
-  .portfolio-section .projects .project .grid .img.large .desc span,
+  .portfolio-section .projects .project .grid .imgContainer.large .desc span,
   .portfolio-section .projects .project .grid .video.large .desc span {
     font-size: 1.3vw;
   }
-  .portfolio-section .projects .project .grid .img.medium .desc span,
+  .portfolio-section .projects .project .grid .imgContainer.medium .desc span,
   .portfolio-section .projects .project .grid .video.medium .desc span {
     font-size: 1.1vw;
   }
-  .portfolio-section .projects .project .grid .img.small .desc span,
+  .portfolio-section .projects .project .grid .imgContainer.small .desc span,
   .portfolio-section .projects .project .grid .video.small .desc span {
     font-size: 0.9vw;
-  }
-  .portfolio-section .projects .overlay .content .overlayImg {
-    width: 85%;
   }
   .portfolio-section .projects .overlay p {
     bottom: 10px;
@@ -719,13 +741,11 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .overlay h2 {
     font-size: 1.8vw;
   }
-  .portfolio-section .projects .overlay .NavigateBefore {
-    left: 4vw;
-  }
+  .portfolio-section .projects .overlay .NavigateBefore,
   .portfolio-section .projects .overlay .NavigateNext {
-    right: 4vw;
+    width: 80px;
   }
-  .portfolio-section .projects .project .grid .img.small .desc span, .portfolio-section .projects .project .grid .img.medium .desc span, .portfolio-section .projects .project .grid .img.large .desc span,
+  .portfolio-section .projects .project .grid .imgContainer.small .desc span, .portfolio-section .projects .project .grid .imgContainer.medium .desc span, .portfolio-section .projects .project .grid .imgContainer.large .desc span,
   .portfolio-section .projects .project .grid .video.small .desc span, .portfolio-section .projects .project .grid .video.medium .desc span, .portfolio-section .projects .project .grid .video.large .desc span {
     bottom: 5px;
   }
@@ -757,7 +777,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project .seeMore a {
     font-size: 16px;
   }
-  .portfolio-section .projects .overlay .overlayImg {
+  .portfolio-section .projects .overlay .mediaContainer {
     width: 90%;
   }
 }
@@ -776,22 +796,21 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .about_me-section .content p {
     font-size: 16px;
   }
-  .portfolio-section .projects .overlay img.NavigateNext {
-    right: 45% !important;
-    top: 95% !important;
-    transform: translate(100%, -100%);
-    width: 70px !important;
-    height: 70px !important;
+  .portfolio-section .projects .overlay .content .horizontal img.NavigateBefore,
+  .portfolio-section .projects .overlay .content .horizontal img.NavigateNext {
+    display: none;
   }
-  .portfolio-section .projects .overlay img.NavigateBefore {
-    left: 45% !important;
-    top: 95% !important;
-    transform: translate(-100%, -100%);
-    width: 70px !important;
-    height: 70px !important;
-  }
-  .portfolio-section .projects .overlay .content .overlayImg {
+  .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
     width: 100%;
+    min-height: 32vh;
+  }
+  .portfolio-section .projects .overlay .content .bottomNav {
+    display: flex;
+  }
+  .portfolio-section .projects .overlay .content .bottomNav img.NavigateBefore,
+  .portfolio-section .projects .overlay .content .bottomNav img.NavigateNext {
+    width: 75px;
+    height: 75px;
   }
 }
 
@@ -824,6 +843,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
   .portfolio-section .projects .project h2 {
     font-size: 16px;
+  }
+  .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
+    min-height: 25vh;
   }
 }
 
