@@ -536,6 +536,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 
 .portfolio-section .projects .overlay .content .horizontal {
   width: 100%;
+  height: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -544,7 +545,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 
 .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
   width: 70%;
-  min-height: 50vh;
+  min-height: 100%;
   position: relative;
   overflow: hidden;
 }
