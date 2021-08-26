@@ -293,10 +293,25 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   color: rgba(255, 255, 255, 0.6);
   font-size: 22px;
   font-weight: 300;
+  text-align: justify;
 }
 
 .portfolio-section .projects .project h2.projectDesc {
   text-align: justify;
+}
+
+.portfolio-section .projects .project h2 em {
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-section .projects .project h2 span {
+  display: block;
+  padding-top: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .portfolio-section .projects .project .grid {
@@ -309,64 +324,59 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   grid-auto-rows: 1fr;
 }
 
-.portfolio-section .projects .project .grid .imgContainer,
-.portfolio-section .projects .project .grid .video {
+.portfolio-section .projects .project .grid .imgContainer {
   position: relative;
   background: #1C1C1C;
   overflow: hidden;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.hover:hover .desc,
-.portfolio-section .projects .project .grid .video.hover:hover .desc {
+.portfolio-section .projects .project .grid .imgContainer.hover:hover .desc {
   opacity: 1;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.hover:hover img,
-.portfolio-section .projects .project .grid .video.hover:hover img {
+.portfolio-section .projects .project .grid .imgContainer.hover:hover img, .portfolio-section .projects .project .grid .imgContainer.hover:hover video {
   transform: scale(1.1);
 }
 
-.portfolio-section .projects .project .grid .imgContainer.large,
-.portfolio-section .projects .project .grid .video.large {
+.portfolio-section .projects .project .grid .imgContainer.large {
   grid-column: span 3;
   grid-row: span 2;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.large:nth-child(n+2),
-.portfolio-section .projects .project .grid .video.large:nth-child(n+2) {
+.portfolio-section .projects .project .grid .imgContainer.large:nth-child(n+2) {
   grid-column-end: -1;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.medium,
-.portfolio-section .projects .project .grid .video.medium {
+.portfolio-section .projects .project .grid .imgContainer.medium {
   grid-column: span 2;
   grid-row: span 1;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.small,
-.portfolio-section .projects .project .grid .video.small {
+.portfolio-section .projects .project .grid .imgContainer.small {
   grid-column: span 1;
   grid-row: span 1;
 }
 
-.portfolio-section .projects .project .grid .imgContainer img,
-.portfolio-section .projects .project .grid .video img {
+.portfolio-section .projects .project .grid .imgContainer.tall {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.portfolio-section .projects .project .grid .imgContainer img {
   transition: transform 300ms ease-in-out;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.portfolio-section .projects .project .grid .imgContainer video,
-.portfolio-section .projects .project .grid .video video {
+.portfolio-section .projects .project .grid .imgContainer video {
   transition: transform 300ms ease-in-out;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc,
-.portfolio-section .projects .project .grid .video .desc {
+.portfolio-section .projects .project .grid .imgContainer .desc {
   z-index: 2;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -386,74 +396,86 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   opacity: 0;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc h1,
-.portfolio-section .projects .project .grid .video .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer .desc h1 {
   padding: 0 5%;
   margin: 0 0 20px 0;
   text-shadow: black 0px 0px 5px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc h2,
-.portfolio-section .projects .project .grid .video .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer .desc h1::first-letter {
+  text-transform: capitalize;
+}
+
+.portfolio-section .projects .project .grid .imgContainer .desc h2 {
   font-weight: 300;
   color: white;
   padding: 0 5%;
   text-shadow: black 0px 0px 3px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc span,
-.portfolio-section .projects .project .grid .video .desc span {
+.portfolio-section .projects .project .grid .imgContainer .desc h2::first-letter {
+  text-transform: capitalize;
+}
+
+.portfolio-section .projects .project .grid .imgContainer .desc h2 em {
+  color: white;
+}
+
+.portfolio-section .projects .project .grid .imgContainer .desc span {
   font-weight: 300;
   position: absolute;
   bottom: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.portfolio-section .projects .project .grid .imgContainer.large .desc h1,
-.portfolio-section .projects .project .grid .video.large .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer.large .desc h1 {
   font-size: 2.6vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.large .desc h2,
-.portfolio-section .projects .project .grid .video.large .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer.large .desc h2 {
   font-size: 1vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.large .desc span,
-.portfolio-section .projects .project .grid .video.large .desc span {
+.portfolio-section .projects .project .grid .imgContainer.large .desc span {
   font-size: 16px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.medium .desc h1,
-.portfolio-section .projects .project .grid .video.medium .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer.medium .desc h1 {
   font-size: 2vw;
   margin: 10px 0;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.medium .desc h2,
-.portfolio-section .projects .project .grid .video.medium .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer.medium .desc h2 {
   font-size: 0.8vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.medium .desc span,
-.portfolio-section .projects .project .grid .video.medium .desc span {
+.portfolio-section .projects .project .grid .imgContainer.medium .desc span {
   font-size: 13px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.small .desc h1,
-.portfolio-section .projects .project .grid .video.small .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer.small .desc h1 {
   font-size: 1.875vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.small .desc h2,
-.portfolio-section .projects .project .grid .video.small .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer.small .desc h2 {
   font-size: 0.625vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.small .desc span,
-.portfolio-section .projects .project .grid .video.small .desc span {
+.portfolio-section .projects .project .grid .imgContainer.small .desc span {
   bottom: 10px;
   font-size: 11px;
+}
+
+.portfolio-section .projects .project .grid .imgContainer.tall .desc h1 {
+  font-size: 2vw;
+}
+
+.portfolio-section .projects .project .grid .imgContainer.tall .desc h2 {
+  font-size: 1vw;
+}
+
+.portfolio-section .projects .project .grid .imgContainer.tall .desc span {
+  font-size: 13px;
 }
 
 .portfolio-section .projects .project .seeMore {
@@ -567,11 +589,19 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   margin-bottom: 0;
 }
 
+.portfolio-section .projects .overlay .content h1::first-letter {
+  text-transform: capitalize;
+}
+
 .portfolio-section .projects .overlay .content h2 {
   flex: 0 1 18px;
   font-size: 18px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-section .projects .overlay .content h2::first-letter {
+  text-transform: capitalize;
 }
 
 .portfolio-section .projects .overlay p {

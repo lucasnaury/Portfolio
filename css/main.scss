@@ -320,8 +320,24 @@ nav{
         font-size: 22px;
         //line-height: 22px;
         font-weight: $light;
+        text-align: justify;
+
+
         &.projectDesc{
           text-align: justify;
+        }
+        em{
+          font-style: normal;
+          font-weight: $regular;
+          color: transparentize($white, 0.2);
+        }
+        span{
+          display: block;
+          padding-top: 6px;
+          color: transparentize($white, 0.4);
+          font-size: 22px;
+          //line-height: 22px;
+          font-weight: $light;
         }
       }
       .grid{
@@ -333,8 +349,7 @@ nav{
         grid-auto-flow: dense;
         grid-auto-rows: 1fr;
 
-        .imgContainer,
-        .video{
+        .imgContainer{
           position: relative;
           //width: 100%;
           //height: 100%;
@@ -345,7 +360,7 @@ nav{
             .desc{
               opacity: 1;
             }
-            img{
+            img,video{
               transform: scale(1.1);
             }
           }
@@ -365,6 +380,10 @@ nav{
           &.small{
             grid-column: span 1;
             grid-row: span 1;
+          }
+          &.tall{
+            grid-column: span 2;
+            grid-row: span 2;
           }
 
           img{
@@ -403,12 +422,24 @@ nav{
               padding: 0 5%;
               margin: 0 0 20px 0;
               text-shadow: black 0px 0px 5px;
+
+              &::first-letter{
+                text-transform: capitalize;
+              }
             }
             h2{
               font-weight: $light;
               color: $white;
               padding: 0 5%;
               text-shadow: black 0px 0px 3px;
+
+              &::first-letter{
+                text-transform: capitalize;
+              }
+
+              em{
+                color: white;
+              }
             }
             span{
               font-weight: $light;
@@ -455,6 +486,19 @@ nav{
               span{
                 bottom: 10px;
                 font-size: 11px;
+              }
+            }
+          }
+          &.tall{
+            .desc{
+              h1{
+                font-size: 2vw;
+              }
+              h2{
+                font-size: 1vw;
+              }
+              span{
+                font-size: 13px;
               }
             }
           }
@@ -570,12 +614,20 @@ nav{
           flex: 0 1 36px;
           font-size: 36px;
           margin-bottom: 0;
+
+          &::first-letter{
+            text-transform: capitalize;
+          }
         }
         h2{
           flex: 0 1 18px;
           font-size: 18px;
           font-weight: $light;
           color: transparentize($white, 0.2);
+
+          &::first-letter{
+            text-transform: capitalize;
+          }
         }
       }
 
