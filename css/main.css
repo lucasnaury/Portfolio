@@ -48,6 +48,7 @@ nav .pages a {
 
 nav .pages a span {
   padding-bottom: 8px;
+  border-bottom: transparent 2px solid;
   transition: border-bottom 100ms ease-out;
 }
 
@@ -362,13 +363,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   grid-row: span 2;
 }
 
-.portfolio-section .projects .project .grid .imgContainer img {
-  transition: transform 300ms ease-in-out;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
+.portfolio-section .projects .project .grid .imgContainer img,
 .portfolio-section .projects .project .grid .imgContainer video {
   transition: transform 300ms ease-in-out;
   width: 100%;
