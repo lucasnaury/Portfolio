@@ -12,11 +12,11 @@ $(document).ready(function () {
 
 
 
-    imgContainers.click(function(){
+    imgContainers.on("vclick",(e)=>{
 
       if (overlay.css('visibility') == 'hidden'){
 
-        selectedProject = $(this).parent().parent();
+        selectedProject = $(e.currentTarget).parent().parent();
 
         overlay.css('visibility','visible');
         overlay.css('opacity','1');
@@ -24,10 +24,10 @@ $(document).ready(function () {
         imgContainers.css("pointer-events","none");
         imgContainers.children('.desc').css('cursor','default');
 
-        selectedImg = $(this);
+        selectedImg = $(e.currentTarget);
 
         //Set the overlay media to the selectedItem
-        SetOverlayMedia($(this));
+        SetOverlayMedia($(e.currentTarget));
       }
     });
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
     }
   }
 
-  closeOverlayBtn.click(function(){
+  closeOverlayBtn.on("vclick",()=>{
     closeOverlay();
   });
 
@@ -56,11 +56,11 @@ $(document).ready(function () {
     }
   });
 
-  navigateBefore.click(function(){
+  navigateBefore.on("vclick",()=>{
     //Get previous element
     Navigate(-1);
   });
-  navigateNext.click(function(){
+  navigateNext.on("vclick",()=>{
     //Get next element
     Navigate(1);
   });
