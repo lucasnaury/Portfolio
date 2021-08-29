@@ -11,7 +11,10 @@ $main-color: #06d6a0;
 $light: 300;
 $regular: 500;
 $bold: 700;
-
+.ui-loader-header{//Hide jquery mobile "Loading"
+  display: none !important;
+  visibility: hidden !important;
+}
 body{
   padding: 0;
   margin: 0;
