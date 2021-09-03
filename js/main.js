@@ -7,17 +7,18 @@ $(document).ready(function () {
     $('.pages').toggleClass('visible');
   });
 
-  $('nav .pages.visible a').on("click touchend",(e)=>{
+  $('a').on("click touchend",(e)=>{
     e.preventDefault();
-    //Hide nav
-    $('.hamburgerToggle').removeClass('active');
-    $('.pages').removeClass('visible');
+
+    if($(e.currentTarget).parent(".pages.visible")){
+      //Hide nav
+      $('.hamburgerToggle').removeClass('active');
+      $('.pages').removeClass('visible');
+      //Goto anchor
+      var anchor = $(e.currentTarget).attr("href");
+      window.location.href = anchor;
+    }
   });
-
-
-
-
-
 
 
 });
