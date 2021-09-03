@@ -665,7 +665,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 28px;
   }
-  .portfolio-section .projects .project h2 {
+  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
     font-size: 18px;
   }
   .portfolio-section .projects .project .grid .imgContainer,
@@ -769,7 +769,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .overlay h1 {
     font-size: 3.6vw;
   }
-  .portfolio-section .projects .overlay h2 {
+  .portfolio-section .projects .overlay h2, .portfolio-section .projects .overlay h2 span {
     font-size: 1.8vw;
   }
   .portfolio-section .projects .overlay .NavigateBefore,
@@ -802,7 +802,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 30px;
   }
-  .portfolio-section .projects .project h2 {
+  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
     font-size: 18px;
   }
   .portfolio-section .projects .project .seeMore a {
@@ -872,7 +872,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 26px;
   }
-  .portfolio-section .projects .project h2 {
+  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
     font-size: 16px;
   }
   .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
@@ -894,7 +894,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 24px;
   }
-  .portfolio-section .projects .project h2 {
+  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
     font-size: 16px;
   }
 }
