@@ -12,9 +12,11 @@ $(document).ready(function () {
 
 
 
-    imgContainers.on("vclick",(e)=>{
+    imgContainers.on("click touchend",(e)=>{
+      e.preventDefault();
 
-      if (overlay.css('visibility') == 'hidden'){
+      if (overlay.css('visibility') == 'hidden'//If not already showing
+      && $("nav .pages").hasClass("visible") == false){//If nav menu not down
 
         selectedProject = $(e.currentTarget).parent().parent();
 
@@ -46,7 +48,8 @@ $(document).ready(function () {
     }
   }
 
-  closeOverlayBtn.on("vclick",()=>{
+  closeOverlayBtn.on("click touchend",(e)=>{
+    e.preventDefault();
     closeOverlay();
   });
 
@@ -56,11 +59,13 @@ $(document).ready(function () {
     }
   });
 
-  navigateBefore.on("vclick",()=>{
+  navigateBefore.on("click touchend",(e)=>{
+    e.preventDefault();
     //Get previous element
     Navigate(-1);
   });
-  navigateNext.on("vclick",()=>{
+  navigateNext.on("click touchend",(e)=>{
+    e.preventDefault();
     //Get next element
     Navigate(1);
   });

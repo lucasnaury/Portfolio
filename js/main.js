@@ -1,16 +1,23 @@
 $(document).ready(function () {
 
-  $('.hamburgerToggle').on("vclick",(e)=>{
+  $('.hamburgerToggle').on("click touchend",(e)=>{
+    e.preventDefault();
+    //Show nav
     $(e.currentTarget).toggleClass('active');
     $('.pages').toggleClass('visible');
   });
 
-  $('a').on("vclick",(e)=>{
-    if($(e.currentTarget).parent(".pages.visible")){
-      $('.hamburgerToggle').removeClass('active');
-      $('.pages').removeClass('visible'); //TO FINISH, NOT WORKING
-    }
+  $('nav .pages.visible a').on("click touchend",(e)=>{
+    e.preventDefault();
+    //Hide nav
+    $('.hamburgerToggle').removeClass('active');
+    $('.pages').removeClass('visible');
   });
+
+
+
+
+
 
 
 });
