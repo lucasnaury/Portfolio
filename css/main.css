@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -171,7 +175,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 .about_me-section #about-me {
   content: "";
   position: absolute;
-  top: calc(-8vw - 70px);
+  top: calc(-8vw - 30px);
 }
 
 .about_me-section .header {
@@ -240,6 +244,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 
 .about_me-section .header .image h2 em {
   color: #06d6a0;
+  font-style: normal;
 }
 
 .about_me-section .content {

@@ -21,6 +21,9 @@ body{
   background-color: $dark_grey;
   overflow-x: hidden;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 *{
   font-family: 'Montserrat', sans-serif;
@@ -188,7 +191,7 @@ nav{
   #about-me{  //ANCHOR
     content: "";
     position: absolute;
-    top: calc(-8vw - 70px);
+    top: calc(-8vw - 30px);
   }
 
   .header{
@@ -253,6 +256,7 @@ nav{
 
         em{
           color: $main-color;
+          font-style: normal;
         }
       }
     }
