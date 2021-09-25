@@ -260,7 +260,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 }
 
 .portfolio-section {
-  margin: 0 12vw 0 12vw;
+  margin: 0 12vw 50px 12vw;
   position: relative;
 }
 
@@ -302,7 +302,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 .portfolio-section .projects .project h2 {
   margin-top: 0;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   text-align: justify;
 }
@@ -321,7 +321,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   display: block;
   padding-top: 6px;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -401,29 +401,30 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   opacity: 0;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer .desc h3 {
   padding: 0 5%;
   margin: 0 0 20px 0;
   text-shadow: black 0px 0px 5px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc h1::first-letter {
+.portfolio-section .projects .project .grid .imgContainer .desc h3::first-letter {
   text-transform: capitalize;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer .desc p {
   font-weight: 300;
   color: white;
   padding: 0 5%;
   text-shadow: black 0px 0px 3px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc h2::first-letter {
+.portfolio-section .projects .project .grid .imgContainer .desc p::first-letter {
   text-transform: capitalize;
 }
 
-.portfolio-section .projects .project .grid .imgContainer .desc h2 em {
+.portfolio-section .projects .project .grid .imgContainer .desc p em {
   color: white;
+  font-style: normal;
 }
 
 .portfolio-section .projects .project .grid .imgContainer .desc span {
@@ -433,11 +434,11 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.portfolio-section .projects .project .grid .imgContainer.large .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer.large .desc h3 {
   font-size: 2.6vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.large .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer.large .desc p {
   font-size: 1vw;
 }
 
@@ -445,12 +446,12 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   font-size: 16px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.medium .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer.medium .desc h3 {
   font-size: 2vw;
   margin: 10px 0;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.medium .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer.medium .desc p {
   font-size: 0.8vw;
 }
 
@@ -458,11 +459,11 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   font-size: 13px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.small .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer.small .desc h3 {
   font-size: 1.875vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.small .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer.small .desc p {
   font-size: 0.625vw;
 }
 
@@ -471,11 +472,11 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   font-size: 11px;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.tall .desc h1 {
+.portfolio-section .projects .project .grid .imgContainer.tall .desc h3 {
   font-size: 2vw;
 }
 
-.portfolio-section .projects .project .grid .imgContainer.tall .desc h2 {
+.portfolio-section .projects .project .grid .imgContainer.tall .desc p {
   font-size: 1vw;
 }
 
@@ -504,6 +505,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 }
 
 .portfolio-section .projects .overlay {
+  z-index: 10;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -623,6 +625,90 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   font-style: normal;
 }
 
+.portfolio-section .experiments-title h2 {
+  color: white;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #06d6a0;
+  margin: 70px 0 25px 0;
+  font-size: 38px;
+}
+
+.portfolio-section .experiments-title p {
+  margin: 0 0 25px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.portfolio-section .experiment-projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 120px;
+}
+
+.portfolio-section .experiment-projects .experiment-project {
+  background: #444444;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio-section .experiment-projects .experiment-project img, .portfolio-section .experiment-projects .experiment-project video {
+  transition: transform 300ms ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-section .experiment-projects .experiment-project .desc {
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio-section .experiment-projects .experiment-project .desc h3 {
+  padding: 0 5%;
+  margin: 10px 0;
+  text-shadow: black 0px 0px 5px;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.portfolio-section .experiment-projects .experiment-project .desc p {
+  font-weight: 300;
+  padding: 0 5%;
+  margin-top: 0;
+  text-shadow: black 0px 0px 3px;
+  font-size: .9vw;
+  text-align: center;
+}
+
+.portfolio-section .experiment-projects .experiment-project.hover:hover .desc {
+  opacity: 1;
+}
+
+.portfolio-section .experiment-projects .experiment-project.hover:hover img, .portfolio-section .experiment-projects .experiment-project.hover:hover video {
+  transform: scale(1.1);
+}
+
 /*****MEDIA QUERIES*****/
 @media (max-width: 1200px) {
   .header-section::before {
@@ -670,7 +756,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 28px;
   }
-  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
+  .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 18px;
   }
   .portfolio-section .projects .project .grid .imgContainer,
@@ -774,7 +860,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .overlay h1 {
     font-size: 3.6vw;
   }
-  .portfolio-section .projects .overlay h2, .portfolio-section .projects .overlay h2 span {
+  .portfolio-section .projects .overlay p, .portfolio-section .projects .overlay p span {
     font-size: 1.8vw;
   }
   .portfolio-section .projects .overlay .NavigateBefore,
@@ -807,7 +893,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 30px;
   }
-  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
+  .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 18px;
   }
   .portfolio-section .projects .project .seeMore a {
@@ -877,7 +963,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 26px;
   }
-  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
+  .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;
   }
   .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
@@ -899,7 +985,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   .portfolio-section .projects .project h1 {
     font-size: 24px;
   }
-  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
+  .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;
   }
 }

@@ -18,7 +18,7 @@ $(document).ready(function () {
       if (overlay.css('visibility') == 'hidden'//If not already showing
       && $("nav .pages").hasClass("visible") == false){//If nav menu not down
 
-        selectedProject = $(e.currentTarget).parent().parent();
+        selectedProject = $(e.currentTarget).parents(".imgProject");
 
         overlay.css('visibility','visible');
         overlay.css('opacity','1');
@@ -53,9 +53,21 @@ $(document).ready(function () {
     closeOverlay();
   });
 
-  $(document).keydown(function(e){
-    if (e.keyCode == 27) {
+  $(document).keydown(e=>{
+    if (e.keyCode == 27) {//Escape key pressed
       closeOverlay();
+    }
+  });
+  $(document).keydown(e=>{
+    if (e.keyCode == 37) {//Left arrow key pressed
+      //Get previous element
+      Navigate(-1);
+    }
+  });
+  $(document).keydown(e=>{
+    if (e.keyCode == 39) {//Right arrow key pressed
+      //Get previous element
+      Navigate(1);
     }
   });
 
@@ -73,7 +85,7 @@ $(document).ready(function () {
   function Navigate (way){
     if (overlay.css('visibility') == 'visible'){//If already visible
 
-      var selectedImgContainers = selectedProject.children('.grid').children('.imgContainer');
+      var selectedImgContainers = selectedProject.find('.imgContainer');
 
       var index = selectedImgContainers.index(selectedImg) + way; //Move in the direction you want
       //If in the list
@@ -103,7 +115,7 @@ $(document).ready(function () {
       overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayVid').attr('src', selectedImgContainer.children('video').attr('src'));
     }
     //Set description and title
-    overlay.children(".content").children('h1').html(selectedImgContainer.children('.desc').children('h1').html());
-    overlay.children(".content").children('h2').html(selectedImgContainer.children('.desc').children('h2').html());
+    overlay.children(".content").children('h1').html(selectedImgContainer.children('.desc').children('h3').html());
+    overlay.children(".content").children('h2').html(selectedImgContainer.children('.desc').children('p').html());
   }
 });
