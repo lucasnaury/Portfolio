@@ -94,10 +94,14 @@ $(document).ready(function () {
         SetOverlayMedia(selectedImgContainers.eq(index));
         selectedImg = selectedImgContainers.eq(index);
 
-      } else{//If you reach the end or the beggining of the list
+      } else if(index >= selectedImgContainers.length){//If you reach the endof the list
         //Set the overlay media to the first media
         SetOverlayMedia(selectedImgContainers.eq(0));
         selectedImg = selectedImgContainers.eq(0);
+      } else {//If you reach the beggining of the list
+        //Set the overlay media to the last media
+        SetOverlayMedia(selectedImgContainers.eq(selectedImgContainers.length - 1));
+        selectedImg = selectedImgContainers.eq(selectedImgContainers.length - 1);
       }
     }
   }
