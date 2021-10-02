@@ -701,6 +701,14 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   text-align: center;
 }
 
+.portfolio-section .experiment-projects .experiment-project .desc span {
+  font-weight: 300;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  bottom: 8px;
+  font-size: .8vw;
+}
+
 .portfolio-section .experiment-projects .experiment-project.hover:hover .desc {
   opacity: 1;
 }
@@ -746,6 +754,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
   .about_me-section .content {
     margin: 0 12vw;
+  }
+  .about_me-section .content p {
+    font-size: 20px;
   }
   .portfolio-section {
     margin-top: 150px;
@@ -873,6 +884,40 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
 }
 
+@media (max-width: 850px) {
+  .portfolio-section .experiment-projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-section .experiment-projects .experiment-project {
+    grid-row: 2;
+    grid-column: auto;
+  }
+  .portfolio-section .experiment-projects .experiment-project .desc h3 {
+    font-size: 3vw;
+  }
+  .portfolio-section .experiment-projects .experiment-project .desc p {
+    font-size: 1.3vw;
+  }
+  .portfolio-section .experiment-projects .experiment-project .desc span {
+    bottom: 1.3vw;
+    font-size: 1.1vw;
+  }
+  .portfolio-section .experiment-projects .experiment-project:nth-child(2) {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .portfolio-section .experiment-projects .experiment-project:nth-child(2) .desc h3 {
+    font-size: 4.2vw;
+  }
+  .portfolio-section .experiment-projects .experiment-project:nth-child(2) .desc p {
+    font-size: 1.6vw;
+  }
+  .portfolio-section .experiment-projects .experiment-project:nth-child(2) .desc span {
+    bottom: 2vw;
+    font-size: 1.5vw;
+  }
+}
+
 @media (max-width: 800px) {
   .about_me-section .header .image h1 {
     top: 65%;
@@ -934,6 +979,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
     width: 75px;
     height: 75px;
   }
+  .portfolio-section .experiments-title h2 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 510px) {
@@ -953,21 +1001,32 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   }
   .about_me-section .header .image h2 {
     margin-top: 0;
+    top: calc(50% + 150px);
   }
   .about_me-section .content {
     margin: 0;
   }
   .portfolio-section .title h1 {
-    font-size: 65px;
+    font-size: 62px;
   }
   .portfolio-section .projects .project h1 {
-    font-size: 26px;
+    font-size: 24px;
+  }
+  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
+    font-size: 16px;
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;
   }
   .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
     min-height: 25vh;
+  }
+  .portfolio-section .experiments-title h2 {
+    margin-top: 40px;
+    font-size: 26px;
+  }
+  .portfolio-section .experiments-title p {
+    font-size: 16px;
   }
 }
 
