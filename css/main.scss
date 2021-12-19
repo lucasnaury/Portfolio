@@ -30,6 +30,11 @@ html{
   font-weight: $regular;
   color: $white;
 }
+em{
+  font-style: normal;
+  font-weight: $regular;
+  color: transparentize($white, 0.2);
+}
 
 nav{
   z-index: 10;
@@ -168,6 +173,7 @@ nav{
     }
     h2{
       margin: 20px 10px;
+      line-height: 1.35em;
       font-size: 35px;
     }
 
@@ -180,7 +186,12 @@ nav{
     bottom: 0;
     transform: translate(-50%,-10px);
     width: 40px;
+    padding-top: 10px;
     opacity: 0.7;
+
+    img{
+      width: 100%;
+    }
   }
 }
 
@@ -267,12 +278,19 @@ nav{
   .content{
     margin: 0 17vw;
 
-    p{
+    p, p a{
       font-size: 22px;
       letter-spacing: 1px;
-      font-weight: $light;;
+      font-weight: $light;
+      text-decoration: none;
       color: transparentize($white, 0.4);
       text-align: justify;
+
+      em{
+        font-style: normal;
+        font-weight: $regular;
+        color: transparentize($white, 0.2);
+      }
     }
   }
 }
@@ -676,7 +694,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 
     .experiment-project{
       background: $light_grey;
@@ -744,7 +762,18 @@ nav{
   }
 }
 
-
+footer{
+  width: 100vw;
+  box-sizing: border-box;
+  //background-color: $grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 12px;
+  color: transparentize($white,0.8);
+  font-weight: $light;
+}
 
 
 /*****MEDIA QUERIES*****/
