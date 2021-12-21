@@ -61,16 +61,6 @@ nav .pages a {
   text-decoration: none;
 }
 
-nav .pages a span {
-  padding-bottom: 8px;
-  border-bottom: transparent 2px solid;
-  transition: border-bottom 100ms ease-out;
-}
-
-nav .pages a span:hover {
-  border-bottom: #06d6a0 2px solid;
-}
-
 nav .hamburgerToggle {
   visibility: hidden;
   display: none;
@@ -749,6 +739,33 @@ footer {
 }
 
 /*****MEDIA QUERIES*****/
+@media (min-width: 1000px) {
+  nav .pages a {
+    padding: 8px 15px;
+  }
+  nav .pages a:not(:last-of-type) {
+    margin-left: calc(2vw - 30px);
+  }
+  nav .pages a:not(:last-of-type) span {
+    padding-bottom: 8px;
+    border-bottom: transparent 2px solid;
+    transition: border-bottom 100ms ease-out;
+  }
+  nav .pages a:not(:last-of-type) span:hover {
+    border-bottom: #06d6a0 2px solid;
+  }
+  nav .pages a:last-of-type {
+    margin-left: calc(2vw - 15px);
+    background-color: #5B7FFF;
+    background-image: linear-gradient(to top right, #06d6a0 0%, transparent 100%);
+    transition: background-color 300ms ease-in-out;
+    border-radius: 5px;
+  }
+  nav .pages a:last-of-type:hover {
+    background-color: #4695E7;
+  }
+}
+
 @media (max-width: 1200px) {
   .header-section::before {
     background-position: 65% -50px;
@@ -863,6 +880,7 @@ footer {
   }
   nav .pages.visible a span {
     font-size: 2vh;
+    padding: 5px 0;
   }
   nav .pages.visible a span:hover {
     border: none;
