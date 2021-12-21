@@ -786,7 +786,7 @@ footer {
   .about_me-section .content {
     margin: 0 12vw;
   }
-  .about_me-section .content p {
+  .about_me-section .content p, .about_me-section .content p a {
     font-size: 20px;
   }
   .portfolio-section {
@@ -960,7 +960,7 @@ footer {
   .about_me-section .content {
     margin: 0 8vw;
   }
-  .about_me-section .content p {
+  .about_me-section .content p, .about_me-section .content p a {
     font-size: 18px;
   }
   .portfolio-section .title h1 {
@@ -991,7 +991,7 @@ footer {
   .about_me-section .header .image h2 {
     font-size: 20px;
   }
-  .about_me-section .content p {
+  .about_me-section .content p, .about_me-section .content p a {
     font-size: 16px;
   }
   .portfolio-section .projects .overlay .content .horizontal img.NavigateBefore,

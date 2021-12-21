@@ -820,7 +820,7 @@ footer{
     .content{
       margin: 0 12vw;
 
-      p{
+      p,p a{
         font-size: 20px;
       }
     }
@@ -1049,7 +1049,7 @@ footer{
     }
     .content{
       margin: 0 8vw;
-      p{
+      p,p a{
         font-size: 18px;
       }
     }
@@ -1097,7 +1097,7 @@ footer{
         }
       }
     }
-    .content p{
+    .content p, .content p a{
       font-size: 16px;
     }
   }
