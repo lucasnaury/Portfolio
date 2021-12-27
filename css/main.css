@@ -40,6 +40,7 @@ nav {
   background-color: #1C1C1C;
   color: white;
   align-items: center;
+  justify-content: center;
 }
 
 nav h1 {
@@ -54,11 +55,32 @@ nav h1 span {
   font-weight: 700;
 }
 
+nav .pages {
+  display: flex;
+  align-items: center;
+}
+
 nav .pages a {
   display: inline-block;
   margin-left: 2vw;
   font-weight: 300;
   text-decoration: none;
+}
+
+nav .pages .icons {
+  margin-left: 1vw;
+}
+
+nav .pages .icons a {
+  padding: 8px;
+  width: 22px;
+  height: 22px;
+  margin-left: 0.2vw;
+}
+
+nav .pages .icons a img {
+  width: 100%;
+  height: 100%;
 }
 
 nav .hamburgerToggle {
@@ -743,25 +765,25 @@ footer {
   nav .pages a {
     padding: 8px 15px;
   }
-  nav .pages a:not(:last-of-type) {
+  nav .pages a:not(#contact):not(.icon) {
     margin-left: calc(2vw - 30px);
   }
-  nav .pages a:not(:last-of-type) span {
+  nav .pages a:not(#contact):not(.icon) span {
     padding-bottom: 8px;
     border-bottom: transparent 2px solid;
     transition: border-bottom 100ms ease-out;
   }
-  nav .pages a:not(:last-of-type) span:hover {
+  nav .pages a:not(#contact):not(.icon) span:hover {
     border-bottom: #06d6a0 2px solid;
   }
-  nav .pages a:last-of-type {
+  nav .pages a#contact {
     margin-left: calc(2vw - 15px);
     background-color: #5B7FFF;
     background-image: linear-gradient(to top right, #06d6a0 0%, transparent 100%);
     transition: background-color 300ms ease-in-out;
     border-radius: 5px;
   }
-  nav .pages a:last-of-type:hover {
+  nav .pages a#contact:hover {
     background-color: #4695E7;
   }
 }
@@ -866,7 +888,7 @@ footer {
     background: #1C1C1C;
     border-top: 1px solid #151515;
   }
-  nav .pages.visible a {
+  nav .pages.visible a, nav .pages.visible .icons {
     box-sizing: border-box;
     width: 100%;
     padding: 1.5vh 0;
@@ -875,15 +897,20 @@ footer {
     justify-content: center;
     transition: background-color 300ms ease-in-out;
   }
-  nav .pages.visible a:hover {
+  nav .pages.visible > a:hover {
     background-color: #242424;
   }
-  nav .pages.visible a span {
+  nav .pages.visible > a span {
     font-size: 2vh;
     padding: 5px 0;
   }
-  nav .pages.visible a span:hover {
+  nav .pages.visible > a span:hover {
     border: none;
+  }
+  nav .pages.visible .icons a {
+    height: 2.2vh;
+    width: auto;
+    padding: 0 15px;
   }
   .header-section {
     margin-top: 50px;

@@ -15,8 +15,19 @@ $(document).ready(function () {
       $('.hamburgerToggle').removeClass('active');
       $('.pages').removeClass('visible');
       //Goto anchor
-      var anchor = $(e.currentTarget).attr("href");
-      window.location.href = anchor;
+      var link = $(e.currentTarget).attr("href");
+      var target = $(e.currentTarget).attr("target");
+
+      if(target == "blank" || target == "_blank"){
+        var win = window.open(link, '_blank');//Try to open in new tab
+        if (win) {//Browser has allowed it to be opened
+          win.focus();
+        } else {//Browser has blocked it          
+          alert('Please allow popups for this website');
+        }
+      }else{
+        window.location.href = link;//Open in this tab
+      }
     }
   });
 
