@@ -879,6 +879,7 @@ footer {
   nav .pages.visible {
     transition: transform 300ms ease-in-out;
     transform: scaleY(1);
+    width: 100vw;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -888,8 +889,6 @@ footer {
     border-top: 1px solid #151515;
   }
   nav .pages.visible a, nav .pages.visible .icons {
-    box-sizing: border-box;
-    width: 100%;
     padding: 1.5vh 0;
     margin: 0;
     display: flex;
@@ -897,7 +896,8 @@ footer {
     transition: background-color 300ms ease-in-out;
   }
   nav .pages.visible > a {
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
   }
   nav .pages.visible > a:hover {
     background-color: #242424;
@@ -910,8 +910,9 @@ footer {
     border: none;
   }
   nav .pages.visible .icons a {
+    box-sizing: content-box;
     height: 2.2vh;
-    width: auto;
+    width: 2.2vh;
     padding: 0 15px;
   }
   .header-section {
