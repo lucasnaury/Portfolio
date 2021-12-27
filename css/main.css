@@ -883,7 +883,6 @@ footer {
     flex-direction: column;
     position: absolute;
     left: 0;
-    width: 100vw;
     top: 50px;
     background: #1C1C1C;
     border-top: 1px solid #151515;
@@ -896,6 +895,9 @@ footer {
     display: flex;
     justify-content: center;
     transition: background-color 300ms ease-in-out;
+  }
+  nav .pages.visible > a {
+    width: 100vw;
   }
   nav .pages.visible > a:hover {
     background-color: #242424;
