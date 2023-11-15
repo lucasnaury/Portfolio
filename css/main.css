@@ -243,10 +243,10 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   font-style: normal;
 }
 .about_me-section .content {
-  margin: 0 17vw;
+  margin: 0 12vw;
 }
 .about_me-section .content p, .about_me-section .content p a {
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 1px;
   font-weight: 300;
   text-decoration: none;
@@ -293,26 +293,26 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   font-size: 34px;
   font-weight: 500;
 }
-.portfolio-section .projects .project h2 {
+.portfolio-section .projects .project p {
   margin-top: 0;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   text-align: justify;
 }
-.portfolio-section .projects .project h2.projectDesc {
+.portfolio-section .projects .project p.projectDesc {
   text-align: justify;
 }
-.portfolio-section .projects .project h2 em {
+.portfolio-section .projects .project p em {
   font-style: normal;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
 }
-.portfolio-section .projects .project h2 span {
+.portfolio-section .projects .project p span {
   display: block;
   padding-top: 6px;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 .portfolio-section .projects .project .grid {
@@ -549,20 +549,20 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 .portfolio-section .projects .overlay .content h1::first-letter {
   text-transform: capitalize;
 }
-.portfolio-section .projects .overlay .content h2 {
+.portfolio-section .projects .overlay .content p {
   flex: 0 1 18px;
   font-size: 18px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
 }
-.portfolio-section .projects .overlay .content h2::first-letter {
+.portfolio-section .projects .overlay .content p::first-letter {
   text-transform: capitalize;
 }
-.portfolio-section .projects .overlay .content h2 a {
+.portfolio-section .projects .overlay .content p a {
   display: block;
   padding-top: 5px;
 }
-.portfolio-section .projects .overlay p {
+.portfolio-section .projects .overlay > p {
   position: absolute;
   bottom: 1vh;
   margin-bottom: 0;
@@ -739,10 +739,10 @@ footer {
     font-size: 24px;
   }
   .about_me-section .content {
-    margin: 0 12vw;
+    margin: 0 8vw;
   }
   .about_me-section .content p, .about_me-section .content p a {
-    font-size: 20px;
+    font-size: 16px;
   }
   .portfolio-section {
     margin-top: 150px;
@@ -754,22 +754,25 @@ footer {
     font-size: 28px;
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
-    font-size: 18px;
+    font-size: 16px;
   }
   .portfolio-section .projects .project .grid .imgContainer,
-.portfolio-section .projects .project .grid .video {
+  .portfolio-section .projects .project .grid .video {
     position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   .portfolio-section .projects .project .grid .imgContainer.large .desc span,
-.portfolio-section .projects .project .grid .video.large .desc span {
+  .portfolio-section .projects .project .grid .video.large .desc span {
     font-size: 1.3vw;
   }
   .portfolio-section .projects .project .grid .imgContainer.medium .desc span,
-.portfolio-section .projects .project .grid .video.medium .desc span {
+  .portfolio-section .projects .project .grid .video.medium .desc span {
     font-size: 1.1vw;
   }
   .portfolio-section .projects .project .grid .imgContainer.small .desc span,
-.portfolio-section .projects .project .grid .video.small .desc span {
+  .portfolio-section .projects .project .grid .video.small .desc span {
     font-size: 0.9vw;
   }
   .portfolio-section .projects .overlay p {
@@ -869,11 +872,11 @@ footer {
     font-size: 1.8vw;
   }
   .portfolio-section .projects .overlay .NavigateBefore,
-.portfolio-section .projects .overlay .NavigateNext {
+  .portfolio-section .projects .overlay .NavigateNext {
     width: 80px;
   }
   .portfolio-section .projects .project .grid .imgContainer.small .desc span, .portfolio-section .projects .project .grid .imgContainer.medium .desc span, .portfolio-section .projects .project .grid .imgContainer.large .desc span,
-.portfolio-section .projects .project .grid .video.small .desc span, .portfolio-section .projects .project .grid .video.medium .desc span, .portfolio-section .projects .project .grid .video.large .desc span {
+  .portfolio-section .projects .project .grid .video.small .desc span, .portfolio-section .projects .project .grid .video.medium .desc span, .portfolio-section .projects .project .grid .video.large .desc span {
     bottom: 5px;
   }
 }
@@ -919,10 +922,7 @@ footer {
     top: 6px;
   }
   .about_me-section .content {
-    margin: 0 8vw;
-  }
-  .about_me-section .content p, .about_me-section .content p a {
-    font-size: 18px;
+    margin: 0 3vw;
   }
   .portfolio-section .title h1 {
     font-size: 85px;
@@ -955,7 +955,7 @@ footer {
     font-size: 16px;
   }
   .portfolio-section .projects .overlay .content .horizontal img.NavigateBefore,
-.portfolio-section .projects .overlay .content .horizontal img.NavigateNext {
+  .portfolio-section .projects .overlay .content .horizontal img.NavigateNext {
     display: none;
   }
   .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
@@ -966,7 +966,7 @@ footer {
     display: flex;
   }
   .portfolio-section .projects .overlay .content .bottomNav img.NavigateBefore,
-.portfolio-section .projects .overlay .content .bottomNav img.NavigateNext {
+  .portfolio-section .projects .overlay .content .bottomNav img.NavigateNext {
     width: 75px;
     height: 75px;
   }
@@ -996,14 +996,14 @@ footer {
   .about_me-section .content {
     margin: 0;
   }
+  .about_me-section .content p, .about_me-section .content p a {
+    font-size: 16px;
+  }
   .portfolio-section .title h1 {
     font-size: 62px;
   }
   .portfolio-section .projects .project h1 {
     font-size: 24px;
-  }
-  .portfolio-section .projects .project h2, .portfolio-section .projects .project h2 span {
-    font-size: 16px;
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;

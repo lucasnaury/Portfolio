@@ -285,10 +285,10 @@ nav{
   }
 
   .content{
-    margin: 0 17vw;
+    margin: 0 12vw;
 
     p, p a{
-      font-size: 22px;
+      font-size: 18px;
       letter-spacing: 1px;
       font-weight: $light;
       text-decoration: none;
@@ -349,10 +349,10 @@ nav{
         font-weight: $regular;
       }
 
-      h2{
+      p{
         margin-top: 0;
         color: transparentize($white, 0.4);
-        font-size: 20px;
+        font-size: 18px;
         //line-height: 22px;
         font-weight: $light;
         text-align: justify;
@@ -370,7 +370,7 @@ nav{
           display: block;
           padding-top: 6px;
           color: transparentize($white, 0.4);
-          font-size: 20px;
+          font-size: 18px;
           //line-height: 22px;
           font-weight: $light;
         }
@@ -652,7 +652,7 @@ nav{
             text-transform: capitalize;
           }
         }
-        h2{
+        p{
           flex: 0 1 18px;
           font-size: 18px;
           font-weight: $light;
@@ -669,7 +669,7 @@ nav{
         }
       }
 
-      p{
+      &>p{
         position: absolute;
         bottom: 1vh;
         margin-bottom: 0;
@@ -877,10 +877,10 @@ footer{
       }
     }
     .content{
-      margin: 0 12vw;
+      margin: 0 8vw;
 
       p,p a{
-        font-size: 20px;
+        font-size: 16px;
       }
     }
   }
@@ -897,12 +897,13 @@ footer{
           font-size: 28px;
         }
         p, p span{
-          font-size: 18px;
+          font-size: 16px;
         }
         .grid{
           .imgContainer,
           .video{
             position: relative;
+            user-select: none;
 
             &.large{
               .desc{
@@ -994,9 +995,6 @@ footer{
             height: 2.2vh;
             width: 2.2vh;
             padding: 0 15px;
-            img{
-
-            }
           }
         }
       }
@@ -1120,10 +1118,7 @@ footer{
       }
     }
     .content{
-      margin: 0 8vw;
-      p,p a{
-        font-size: 18px;
-      }
+      margin: 0 3vw;
     }
   }
   .portfolio-section{
@@ -1225,6 +1220,9 @@ footer{
     }
     .content{
       margin: 0;
+      p,p a{
+        font-size: 16px;
+      }
     }
   }
   .portfolio-section{
@@ -1237,9 +1235,6 @@ footer{
       .project{
         h1{
           font-size: 24px;
-        }
-        h2,h2 span{
-          font-size: 16px;
         }
         p, p span{
           font-size: 16px;

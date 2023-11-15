@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
 
-    imgContainers.on("click touchend",(e)=>{
+    imgContainers.on("click",(e)=>{
       e.preventDefault();
 
       if (overlay.css('visibility') == 'hidden'//If not already showing
@@ -120,6 +120,6 @@ $(document).ready(function () {
     }
     //Set description and title
     overlay.children(".content").children('h1').html(selectedImgContainer.children('.desc').children('h3').html());
-    overlay.children(".content").children('h2').html(selectedImgContainer.children('.desc').children('p').html());
+    overlay.children(".content").children('p').html(selectedImgContainer.children('.desc').children('p').html());
   }
 });
