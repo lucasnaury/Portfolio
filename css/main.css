@@ -28,6 +28,12 @@ em {
   color: rgba(255, 255, 255, 0.8);
 }
 
+i {
+  font-style: italic;
+  font-weight: inherit;
+  color: inherit;
+}
+
 nav {
   z-index: 10;
   display: flex;

@@ -81,7 +81,71 @@
 
     <div class="projects">
       <div class="project imgProject">
-        <h1>Projet #1 - Recipes</h1>
+        <h1>Projet #1 - Hackathon Digital Innovation</h1>
+        <p>
+          En janvier 2024, j'ai eu l'occasion de participer au <em>Hackathon Digital Innovation</em> organisé par mon école <i>(IMT Nord Europe)</i> en partenariat avec la CITC et l'ENSAM Lille.
+          <span>
+            <em>L'objectif :</em> concevoir un système robotique capable de <em>trier des pièces de formes variées</em> à l'aide d'un bras robotique <i>(Niryo Ned2)</i> équipé d'une caméra et d'une pince. 
+            Ces pièces étaient ensuites déposées sur un convoyeur <i>(robot Kobuki équipé d'un lidar 2D)</i> pour être déplacé vers des points d'intérêt.
+          </span>
+          <span>
+            <em>Technologies utilisées :</em> ROS2, Python, OpenCV
+          </span>
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 1.33333333333-->
+            <img loading="lazy" class="media" src="img/Project1/niryo.jpg" alt="Settings">
+            <div class="desc">
+              <h3>Niryo Ned2</h3>
+              <p>Nous avons d'abord utilisé le robot <em>Niryo Ned2</em> ainsi que son kit de vision, pour <em>détecter puis attraper des pièces</em>.
+              </br>D'abord de simples carrés/ronds, nous avons ensuite du attraper des <em>pièces plus complexes/</em>
+              </p>
+            </div>
+          </div>
+
+          <div class="imgContainer tall hover">
+            <!--Ratio 1.16756706827-->
+            <img loading="lazy" class="media" src="img/Project1/kobuki.jpg" alt="Ecran principal">
+            <div class="desc">
+              <h3>Kobuki</h3>
+              <p>Le <em>robot Kobuki</em> est un robot de type <i>"TurleBot"</i>. Nous l'avons utilisé pour déplacer les pièces d'un point à l'autre de l'environnement, grâce à son <em>lidar 2D</em> lui permettant de se repérer.</p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer large hover">
+            <img loading="lazy" class="media" src="img/Project1/environnement.jpg" alt="Ecran principal">
+            <div class="desc">
+              <h3>Environnement</h3>
+              <p>
+                L'environnement de test était un labyrinthe. Une fois le Kobuki chargé par le bras robot, il devait se déplacer dans l'un des points de l'environnement.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project1/deplacement_pieces.jpg" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>Déplacement des pièces</h3>
+              <p>Le bras robot devait déposer les pièces dans la boite en bois <i>(découpée au fablab de l'école)</i> disposée sur le Kobuki.</p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project1/slam.jpg" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>La carte</h3>
+              <p>A l'aide d'un algorithme de <em>SLAM</em>, nous avons créé une <em>cartographie de l'environnement</em> de test afin de déterminer les positions des <em>points d'intérêt</em> et permettre au robot de <em>se repérer</em>.</p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="seeMore"><a href="https://robot-ia-hdf.github.io/" target="_blank">En savoir plus</a></div>
+      </div>
+      <div class="project imgProject">
+        <h1>Projet #2 - Recipes</h1>
         <p>
           Recipes est une application web qui vous permet de <em>stocker vos recettes en un seul endroit</em>.
           Avec elle, vous n'aurez plus à chercher dans des livres ou des tiroirs pendant des heures !!! Vous pourrez y
@@ -93,7 +157,7 @@
           <div class="imgContainer large hover">
             <!--Ratio 1.33333333333-->
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project1/Main.mp4" alt="Présentation de l'application"></video>
+              src="img/Project2/Main.mp4" alt="Présentation de l'application"></video>
             <div class="desc">
               <h3>Présentation</h3>
               <p>
@@ -108,7 +172,7 @@
 
           <div class="imgContainer tall hover">
             <!--Ratio 1.16756706827-->
-            <img loading="lazy" class="media" src="img/Project1/Main screen.png" alt="Ecran principal">
+            <img loading="lazy" class="media" src="img/Project2/Main screen.png" alt="Ecran principal">
             <div class="desc">
               <h3>écran d'accueil</h3>
               <p>L'écran d'accueil vous permet d'accéder aux différentes fonctions de l'application.</p>
@@ -118,7 +182,7 @@
 
           <div class="imgContainer large hover">
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project1/Recipes.mp4" alt="Présentation écran de recettes"></video>
+              src="img/Project2/Recipes.mp4" alt="Présentation écran de recettes"></video>
             <div class="desc">
               <h3>Recettes</h3>
               <p>
@@ -131,7 +195,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project1/My recipes.png" alt="Onglet Mes recettes / Favoris">
+            <img loading="lazy" class="media" src="img/Project2/My recipes.png" alt="Onglet Mes recettes / Favoris">
             <div class="desc">
               <h3>Mes recettes</h3>
               <p>Dans cet onglet, l'utilisateur peut à la fois voir les <em>recettes qu'il a créées</em>
@@ -140,7 +204,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project1/Random.png" alt="Onglet Recherche aléatoire">
+            <img loading="lazy" class="media" src="img/Project2/Random.png" alt="Onglet Recherche aléatoire">
             <div class="desc">
               <h3>Recherche aléatoire</h3>
               <p>Dans cet onglet, l'utilisateur peut sélectionner le type de recettes qu'il souhaite,
@@ -153,7 +217,7 @@
         <div class="seeMore"><a href="https://livrerecettes.netlify.app/" target="_blank">Voir l'application</a></div>
       </div>
       <div class="project imgProject">
-        <h1>Projet #2 - Workout Timer</h1>
+        <h1>Projet #3 - Workout Timer</h1>
         <p>
           Application web qui permet de <em>planifier sa séance de sport</em>. L'utilisateur choisit la durée, le temps
           de
@@ -165,7 +229,7 @@
         <div class="grid">
           <div class="imgContainer large hover">
             <!--Ratio 1.33333333333-->
-            <img loading="lazy" class="media" src="img/Project2/Settings.jpg" alt="Settings">
+            <img loading="lazy" class="media" src="img/Project3/Settings.jpg" alt="Settings">
             <div class="desc">
               <h3>Ecran d'accueil</h3>
               <p>C'est la première page que l'utilisateur voit en lançant l'application. Il peut y remplir les données
@@ -176,7 +240,7 @@
 
           <div class="imgContainer medium hover">
             <!--Ratio 0.88396811337-->
-            <img loading="lazy" class="media" src="img/Project2/TimePicker.jpg" alt="Time Picker">
+            <img loading="lazy" class="media" src="img/Project3/TimePicker.jpg" alt="Time Picker">
             <div class="desc">
               <h3>Time Picker</h3>
               <p>Utilisation d'une <em>librairie JavaScript</em> pour avoir un <em>Time Picker</em>.</p>
@@ -185,7 +249,7 @@
           </div>
           <div class="imgContainer medium hover">
             <!--Ratio 1.79333333333-->
-            <img loading="lazy" class="media" src="img/Project2/SettingsCompleted.jpg" alt="Settings Completed">
+            <img loading="lazy" class="media" src="img/Project3/SettingsCompleted.jpg" alt="Settings Completed">
             <div class="desc">
               <h3>Paramètres remplis</h3>
               <p>Une fois les paramètres remplis, l'utilisateur peut cliquer sur <em>"START"</em> afin de lancer
@@ -196,7 +260,7 @@
 
           <div class="imgContainer large hover">
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project2/InUse.mp4" alt="Application"></video>
+              src="img/Project3/InUse.mp4" alt="Application"></video>
             <div class="desc">
               <h3>Application en marche</h3>
               <p>
@@ -207,7 +271,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project2/PracticeTime.jpg" alt="Rest Time">
+            <img loading="lazy" class="media" src="img/Project3/PracticeTime.jpg" alt="Rest Time">
             <div class="desc">
               <h3>Practice Time</h3>
               <p>L'utilisateur <em>réalise l'exercice</em> durant le temps indiqué.</p>
@@ -215,7 +279,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project2/RestTime.jpg" alt="Doubly">
+            <img loading="lazy" class="media" src="img/Project3/RestTime.jpg" alt="Doubly">
             <div class="desc">
               <h3>Rest Time</h3>
               <p>L'utilisateur <em>se repose</em> durant le temps indiqué.</p>
@@ -227,7 +291,7 @@
         <div class="seeMore"><a href="https://timerworkout.netlify.app/" target="_blank">Voir l'application</a></div>
       </div>
       <div class="project imgProject">
-        <h1>Projet #3 - CONTROL</h1>
+        <h1>Projet #4 - CONTROL</h1>
         <p>
           Jeu PC développé pendant les vacances d'été 2020 à l'aide d'<em>Unity 3D</em>. Le principe est simple : vous
           controlez un personnage et vous devez atteindre
@@ -240,7 +304,7 @@
         <div class="grid">
           <div class="imgContainer large hover">
             <!--Ratio 1.33333333333-->
-            <img loading="lazy" class="media" src="img/Project3/MainMenu.jpg" alt="Main Menu">
+            <img loading="lazy" class="media" src="img/Project4/MainMenu.jpg" alt="Main Menu">
             <div class="desc">
               <h3>Ecran d'accueil</h3>
               <p>C'est la première chose que le joueur voit en lançant le jeu.</p>
@@ -250,7 +314,7 @@
 
           <div class="imgContainer medium hover">
             <!--Ratio 0.88396811337-->
-            <img loading="lazy" class="media" src="img/Project3/Options.jpg" alt="Options">
+            <img loading="lazy" class="media" src="img/Project4/Options.jpg" alt="Options">
             <div class="desc">
               <h3>Menu Options</h3>
               <p>À partir de ce menu, le joueur peut <em>modifier ses contrôles, ses paramètres graphiques et le volume
@@ -260,7 +324,7 @@
           </div>
           <div class="imgContainer medium hover">
             <!--Ratio 1.79333333333-->
-            <img loading="lazy" class="media" src="img/Project3/LevelSelect.jpg" alt="Level Select">
+            <img loading="lazy" class="media" src="img/Project4/LevelSelect.jpg" alt="Level Select">
             <div class="desc">
               <h3>Sélecteur de niveaux</h3>
               <p>Seul le dernier niveau non joué est accessible au joueur.</p>
@@ -270,7 +334,7 @@
 
           <div class="imgContainer large hover">
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project3/Blobby.mp4" alt="Blobby"></video>
+              src="img/Project4/Blobby.mp4" alt="Blobby"></video>
             <div class="desc">
               <h3>Blobby - Le personnage qui rebondit</h3>
               <p>Le joueur est amené à rencontrer ce personnage qui permet au joueur de <em>rebondir</em> et ainsi
@@ -279,7 +343,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project3/Tutorial.gif" alt="Tutorial">
+            <img loading="lazy" class="media" src="img/Project4/Tutorial.gif" alt="Tutorial">
             <div class="desc">
               <h3>Premier niveau du tutoriel</h3>
               <p>C'est le premier niveau que le joueur est amené à jouer. Il lui apprend les <em>déplacements de
@@ -288,7 +352,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project3/Doubly.jpg" alt="Doubly">
+            <img loading="lazy" class="media" src="img/Project4/Doubly.jpg" alt="Doubly">
             <div class="desc">
               <h3>Doubly - Le personnage aux multiples saut</h3>
               <p>C'est le premier personnage que le joueur rencontre. Il est capable de faire un <em>double saut</em>,
