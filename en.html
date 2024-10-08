@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr" id="home">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Lucas Naury's Portfolio, a front-end developper, engineering student at IMT Nord Europe">
+  <meta name="theme-color" content="#1C1C1C">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav>
+    <h1><span>Lucas</span> NAURY</h1>
+    <div class="pages">
+      <a href="#home"><span>Home</span></a>
+      <a href="#about-me"><span>About</span></a>
+      <a href="#portfolio"><span>Portfolio</span></a>
+      <a href="mailto:lucas.naury@sfr.fr" id="contact"><span>Contact</span></a>
+      <div class="icons">
+        <a href="https://github.com/lucasnaury" target="blank" class="icon"><img src="img/github.svg" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/lucasnaury/" target="_blank" class="icon"><img src="img/linkedin.svg"
+            alt="Linkedin"></a>
+      </div>
+    </div>
+    <div class="hamburgerToggle">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+  </nav>
+
+  <section class="header-section">
+    <a href="#about-me" class="scroll-down-indicator">
+      <img loading="lazy" src="img/down-arrow.gif" alt=""></a>
+    <div class="title">
+      <h1>Looking for</br>a job</h1>
+      <h2>Robotics engineering</h2>
+    </div>
+  </section>
+
+  <section class="about_me-section">
+
+    <span id="about-me"></span>
+    <div class="header">
+      <div class="image">
+        <h1>About Me
+          <div class="ligne"></div>
+        </h1>
+        <h2>Lucas NAURY <em>-</em> <span>MSc student</span></h2>
+      </div>
+    </div>
+    <div class="content">
+      <p>
+        Currently doing a MSc in Robotics at Cranfield University, I'm looking for a position as a <em>Robotics engineer</em>.
+      </p>
+      <p>
+        I've always had a passion for IT. Using online courses, I've learnt various languages 
+        (<em>HTML, CSS, JS, VueJS, C#, C++, C, Python, Java</em>, etc.) to satisfy my curiosity.
+        I've also created a few personal projects in my spare time, which you can consult <a href="#portfolio">below</a>.
+      </p>
+      <p>
+        After playing with software and web programming, I discovered embedded programming and fell in love with it.
+        I decided to pursue a carreer in that sector, as a robotics engineer.
+      </p>
+    </div>
+  </section>
+
+  <section class="portfolio-section">
+    <span id="portfolio"></span>
+    <div class="title">
+      <h1>Portfolio
+        <div class="ligne"></div>
+      </h1>
+    </div>
+
+    <div class="projects">
+      <div class="project imgProject">
+        <h1>Projet #1 - Digital Innovation Hackathon</h1>
+        <p>
+          In January 2024, I had the opportunity to take part in the <em>Digital Innovation Hackathon</em> organised by my school <i>(IMT Nord Europe)</i> in partnership with CITC and ENSAM Lille.
+          <span>
+            <em>The aim :</em> design a robotic system capable of <em>sorting parts of various shapes</em> using a robotic arm <i>(Niryo Ned2)</i> equipped with a camera and a gripper.
+            The parts were then placed on a conveyor <i>(a Kobuki robot equipped with 2D lidar)</i> and moved to points of interest.
+          </span>
+          <span>
+            <em>Technologies used :</em> ROS2, Python, OpenCV
+          </span>
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 1.33333333333-->
+            <img loading="lazy" class="media" src="img/Project1/niryo.jpg" alt="Niryo">
+            <div class="desc">
+              <h3>Niryo Ned2</h3>
+              <p>
+                We first used the <em>Niryo Ned2</em> robot and its vision kit to <em>detect and then pick up parts</em>.
+              </br>Starting with simple squares/round shapes, we then had to pick up <em>more complex parts</em>.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer tall hover">
+            <!--Ratio 1.16756706827-->
+            <img loading="lazy" class="media" src="img/Project1/kobuki.jpg" alt="Ecran principal">
+            <div class="desc">
+              <h3>Kobuki</h3>
+              <p>The <em>Kobuki robot</em> is a <i>"TurleBot"</i> type robot. We used it to move parts from one point to another in the environment, using its 2D lidar to locate and navigate to specific locations.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer large hover">
+            <img loading="lazy" class="media" src="img/Project1/environnement.jpg" alt="Ecran principal">
+            <div class="desc">
+              <h3>Environment</h3>
+              <p>
+                The test environment was a maze. Once the Kobuki had been loaded by the robot arm, it had to move to one of the points in the environment.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project1/deplacement_pieces.jpg" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>Moving parts</h3>
+              <p>The robot arm had to deposit the parts in the wooden box <i>(cut out at the school fablab)</i> placed on the Kobuki.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project1/slam.jpg" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>The map</h3>
+              <p>Using a <em>SLAM</em> algorithm, we created a <em>map of the test environment</em> to determine the positions of <em>points of interest</em> and enable the robot to find its way around.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="seeMore"><a href="https://robot-ia-hdf.github.io/" target="_blank">More info</a></div>
+      </div>
+      <div class="project imgProject">
+        <h1>Project #2 - Recipes</h1>
+        <p>
+          Recipes is a web application that allows you to <em>store your recipes in one place</em>.
+          With it, you'll no longer have to search through books or drawers for hours! You can access everything
+          with just one click, from any device!<br>
+          <span>However, this isn't a typical recipe app. Recipes allows you to <em>randomly choose recipes</em> when you don’t know what to cook!</span>
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 1.33333333333-->
+            <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
+              src="img/Project2/Main.mp4" alt="App presentation"></video>
+            <div class="desc">
+              <h3>Overview</h3>
+              <p>
+                <em>Recipes</em> has several features such as: <em>random recipe selection</em> when you're out of ideas,
+                <em>cloud synchronization</em> for your recipes, <em>recipe sharing</em> via a simple link, and many more...
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer tall hover">
+            <!--Ratio 1.16756706827-->
+            <img loading="lazy" class="media" src="img/Project2/Main screen.png" alt="Main screen">
+            <div class="desc">
+              <h3>Home screen</h3>
+              <p>The home screen allows you to access the various functions of the app.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer large hover">
+            <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
+              src="img/Project2/Recipes.mp4" alt="Recipes screen presentation"></video>
+            <div class="desc">
+              <h3>Recipes</h3>
+              <p>
+                When displaying recipes, the user can see the <em>time</em> it will take, the <em>difficulty</em>, and the <em>number of servings</em>.
+                Then, the steps and ingredients are organized by <em>categories</em> for easier understanding.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project2/My recipes.png" alt="My Recipes / Favorites tab">
+            <div class="desc">
+              <h3>My Recipes</h3>
+              <p>In this tab, the user can see both the <em>recipes they have created</em> and their <em>favorite recipes</em>.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project2/Random.png" alt="Random Search tab">
+            <div class="desc">
+              <h3>Random Search</h3>
+              <p>In this tab, the user can select the type of recipe they want, and the app will <em>find one randomly</em>.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+        </div>
+        <div class="seeMore"><a href="https://livrerecettes.netlify.app/" target="_blank">View the app</a></div>
+      </div>
+
+      <div class="project imgProject">
+        <h1>Project #3 - Workout Timer</h1>
+        <p>
+          A web application that allows you to <em>plan your workout session</em>. The user selects the duration, rest time, 
+          and number of repetitions for an exercise. The application then displays countdowns so that the user can fully 
+          focus on their workout!
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 1.33333333333-->
+            <img loading="lazy" class="media" src="img/Project3/Settings.jpg" alt="Settings">
+            <div class="desc">
+              <h3>Home Screen</h3>
+              <p>This is the first page the user sees when launching the app. They can input their exercise details here.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <!--Ratio 0.88396811337-->
+            <img loading="lazy" class="media" src="img/Project3/TimePicker.jpg" alt="Time Picker">
+            <div class="desc">
+              <h3>Time Picker</h3>
+              <p>Uses a <em>JavaScript library</em> for the <em>Time Picker</em>.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <!--Ratio 1.79333333333-->
+            <img loading="lazy" class="media" src="img/Project3/SettingsCompleted.jpg" alt="Settings Completed">
+            <div class="desc">
+              <h3>Completed Settings</h3>
+              <p>Once the settings are filled in, the user can click <em>"START"</em> to begin the workout.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer large hover">
+            <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
+              src="img/Project3/InUse.mp4" alt="App in use"></video>
+            <div class="desc">
+              <h3>App in Use</h3>
+              <p>
+                Once the timer starts, an animation displays the elapsed time as a circle.
+                </br>The app stops when the workout is fully completed.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project3/PracticeTime.jpg" alt="Practice Time">
+            <div class="desc">
+              <h3>Practice Time</h3>
+              <p>The user <em>performs the exercise</em> during the specified time.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project3/RestTime.jpg" alt="Rest Time">
+            <div class="desc">
+              <h3>Rest Time</h3>
+              <p>The user <em>rests</em> during the specified time.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+        </div>
+        <div class="seeMore"><a href="https://timerworkout.netlify.app/" target="_blank">View the app</a></div>
+    </div>
+    
+    <div class="project imgProject">
+        <h1>Project #4 - CONTROL</h1>
+        <p>
+          A PC game developed during the summer of 2020 using <em>Unity 3D</em>. The concept is simple: you control a character, 
+          and you need to reach the portal to move on to the next level. To do so, you can <em>take control of other characters</em> 
+          in the level by "shooting" them. Each character has <em>special abilities</em>, so the player must strategize to complete the level.
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 1.33333333333-->
+            <img loading="lazy" class="media" src="img/Project4/MainMenu.jpg" alt="Main Menu">
+            <div class="desc">
+              <h3>Home Screen</h3>
+              <p>This is the first thing the player sees when launching the game.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <!--Ratio 0.88396811337-->
+            <img loading="lazy" class="media" src="img/Project4/Options.jpg" alt="Options">
+            <div class="desc">
+              <h3>Options Menu</h3>
+              <p>From this menu, the player can <em>adjust controls, graphics settings, and game volume</em>.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <!--Ratio 1.79333333333-->
+            <img loading="lazy" class="media" src="img/Project4/LevelSelect.jpg" alt="Level Select">
+            <div class="desc">
+              <h3>Level Selector</h3>
+              <p>Only the last unplayed level is accessible to the player.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer large hover">
+            <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
+              src="img/Project4/Blobby.mp4" alt="Blobby"></video>
+            <div class="desc">
+              <h3>Blobby - The Bouncing Character</h3>
+              <p>The player will meet this character, who allows the player to <em>bounce</em> and reach previously inaccessible areas.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project4/Tutorial.gif" alt="Tutorial">
+            <div class="desc">
+              <h3>First Tutorial Level</h3>
+              <p>This is the first level the player plays. It teaches them the <em>basic movements</em>.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+    
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/Project4/Doubly.jpg" alt="Doubly">
+            <div class="desc">
+              <h3>Doubly - The Double Jump Character</h3>
+              <p>This is the first character the player encounters. They can perform a <em>double jump</em>, allowing them to overcome larger obstacles.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+        </div>
+        <div class="seeMore"><a href="https://mega.nz/folder/tv40HD5a#Z3l5f47MlulO1jTQ8uCasQ" target="_blank">Download the game</a></div>
+    </div>
+    
+    <div class="overlay">
+        <img loading="lazy" src="img/close.png" class="close">
+    
+        <div class="content">
+          <div class="horizontal">
+            <img loading="lazy" src="img/NavigateBefore.png" alt="<" class="NavigateBefore">
+            <div class="mediaContainer">
+              <img loading="lazy" src="" class="overlayImg">
+              <video loading="lazy" src="" class="overlayVid" autoplay loop>
+            </div>
+            <img loading="lazy" src="img/NavigateNext.png" alt=">" class="NavigateNext">
+          </div>
+          <h1></h1>
+          <p></p>
+          <div class="bottomNav">
+            <img loading="lazy" src="img/NavigateBefore.png" alt="<" class="NavigateBefore">
+            <img loading="lazy" src="img/NavigateNext.png" alt=">" class="NavigateNext">
+          </div>
+        </div>
+        <p>Press <em>Esc</em> to exit</p>
+    </div>
+    
+    <div class="experiments-title">
+        <h2>Experimentations</h2>
+        <p>Here are a few quick projects made out of curiosity, to test different things and expand my knowledge.</p>
+    </div>
+    
+    <div class="experiment-projects imgProject two-col">
+        <div class="experiment-project imgContainer hover">
+          <div class="desc">
+            <h3>Sorting Visualizer</h3>
+            <p>Visualization of different sorting algorithms, using VueJS.<br>
+            <a href="https://sorting.lucasnaury.fr/" target="_blank">View link</a></p>
+            <span>Click to expand</span>
+          </div>
+          <video loading="lazy" class="media" width="100%" height="100%" muted
+                src="img/Extra-projects/Sorting visualizer.mp4" alt="Sorting visualization"></video>
+        </div>
+    
+        <div class="experiment-project imgContainer hover">
+          <div class="desc">
+            <h3>A* Pathfinding visualization</h3>
+            <p>Implementation of the A* pathfinding algorithm, displaying heuristic, real, and total costs.</p>
+            <span>Click to expand</span>
+          </div>
+          <img class="media" src="img/Extra-projects/Pathfinding.png" alt="A* Pathfinding visualization">
+        </div>
+    
+        <div class="experiment-project imgContainer hover">
+          <div class="desc">
+            <h3>Double Pendulum</h3>
+            <p>Implementation of the double pendulum motion equations using the "Runge-Kutta" method.</p>
+            <span>Click to expand</span>
+          </div>
+          <img class="media" src="img/Extra-projects/Double Pendulum.png" alt="Double Pendulum">
+        </div>
+    
+        <div class="experiment-project imgContainer hover">
+          <div class="desc">
+            <h3>Fractal Trees</h3>
+            <p>Implementation of a fractal tree generation algorithm using Unity3D.</p>
+            <span>Click to expand</span>
+          </div>
+          <img class="media" src="img/Extra-projects/Fractal Trees.png" alt="Fractal Trees">
+        </div>
+    </div>
+    
+
+  </section>
+
+  <footer>Made by Lucas Naury - All rights reserved</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript" defer></script>
+  <script src="js/portfolio.js" type="text/javascript" defer></script>
+</body>
+
+</html>
