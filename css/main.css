@@ -296,7 +296,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 }
 .portfolio-section .projects .project h1 {
   color: white;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 500;
 }
 .portfolio-section .projects .project p {
@@ -579,9 +579,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 .portfolio-section .projects .overlay em {
   font-style: normal;
 }
-.portfolio-section .experiments-title h2 {
+.portfolio-section .section-title h2 {
   color: white;
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -589,7 +589,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   margin: 70px 0 25px 0;
   font-size: 38px;
 }
-.portfolio-section .experiments-title p {
+.portfolio-section .section-title p {
   margin: 0 0 25px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 20px;
@@ -757,7 +757,7 @@ footer {
     font-size: 120px;
   }
   .portfolio-section .projects .project h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;
@@ -934,7 +934,7 @@ footer {
     font-size: 85px;
   }
   .portfolio-section .projects .project h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 18px;
@@ -976,8 +976,8 @@ footer {
     width: 75px;
     height: 75px;
   }
-  .portfolio-section .experiments-title h2 {
-    font-size: 30px;
+  .portfolio-section .section-title h2 {
+    font-size: 32px;
   }
 }
 @media (max-width: 510px) {
@@ -1009,7 +1009,7 @@ footer {
     font-size: 62px;
   }
   .portfolio-section .projects .project h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;
@@ -1017,11 +1017,11 @@ footer {
   .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
     min-height: 25vh;
   }
-  .portfolio-section .experiments-title h2 {
+  .portfolio-section .section-title h2 {
     margin-top: 40px;
-    font-size: 26px;
+    font-size: 28px;
   }
-  .portfolio-section .experiments-title p {
+  .portfolio-section .section-title p {
     font-size: 16px;
   }
 }
@@ -1037,7 +1037,7 @@ footer {
     font-size: 50px;
   }
   .portfolio-section .projects .project h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;
