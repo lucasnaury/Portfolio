@@ -598,8 +598,10 @@ nav{
         justify-content: center;
 
         .horizontal{
+          flex: 1 1 ;
+          height: 1px;
+
           width: 100%;
-          height: 80%;
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -607,17 +609,15 @@ nav{
 
           .mediaContainer{
             width: 70%;
-            min-height: 100%;
-            position: relative;
-            overflow: hidden;
+            height: 100%;
+            // position: relative;
+            // overflow: hidden;
 
             .overlayImg,
             .overlayVid{
               width: 100%;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
+              height: 100%;
+              object-fit: contain;
 
             }
           }
@@ -635,7 +635,7 @@ nav{
           flex-direction: row;
           align-items: center;
           margin-top: 20px;
-          width: 30%;
+          width: 100%;
           justify-content: space-around;
           img.NavigateBefore,
           img.NavigateNext{
@@ -1183,7 +1183,6 @@ footer{
           }
           .mediaContainer{
             width: 100%;
-            min-height: 32vh;
           }
         }
 
@@ -1243,13 +1242,6 @@ footer{
         }
         p, p span{
           font-size: 16px;
-        }
-      }
-      .overlay .content{
-        .horizontal{
-          .mediaContainer{
-            min-height: 25vh;
-          }
         }
       }
     }

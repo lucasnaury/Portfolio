@@ -504,8 +504,9 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   justify-content: center;
 }
 .portfolio-section .projects .overlay .content .horizontal {
+  flex: 1 1;
+  height: 1px;
   width: 100%;
-  height: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -513,17 +514,14 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 }
 .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
   width: 70%;
-  min-height: 100%;
-  position: relative;
-  overflow: hidden;
+  height: 100%;
 }
 .portfolio-section .projects .overlay .content .horizontal .mediaContainer .overlayImg,
 .portfolio-section .projects .overlay .content .horizontal .mediaContainer .overlayVid {
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .portfolio-section .projects .overlay .content .horizontal img.NavigateBefore,
 .portfolio-section .projects .overlay .content .horizontal img.NavigateNext {
@@ -537,7 +535,7 @@ nav .hamburgerToggle.active .line:nth-child(3) {
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
-  width: 30%;
+  width: 100%;
   justify-content: space-around;
 }
 .portfolio-section .projects .overlay .content .bottomNav img.NavigateBefore,
@@ -966,7 +964,6 @@ footer {
   }
   .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
     width: 100%;
-    min-height: 32vh;
   }
   .portfolio-section .projects .overlay .content .bottomNav {
     display: flex;
@@ -1013,9 +1010,6 @@ footer {
   }
   .portfolio-section .projects .project p, .portfolio-section .projects .project p span {
     font-size: 16px;
-  }
-  .portfolio-section .projects .overlay .content .horizontal .mediaContainer {
-    min-height: 25vh;
   }
   .portfolio-section .section-title h2 {
     margin-top: 40px;

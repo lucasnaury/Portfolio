@@ -107,16 +107,25 @@ $(document).ready(function () {
   }
 
   function SetOverlayMedia(selectedImgContainer){
+    var overlayImg = overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayImg')
+    var overlayVid = overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayVid')
+    
     //If contains an img
     if(selectedImgContainer.children(".media").prop('nodeName') == "IMG"){
-      //Show img and hide video
-      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayImg').attr('src', selectedImgContainer.children('img').attr('src'));
-      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayVid').attr('src', "");
+      //Show img
+      overlayImg.attr('src', selectedImgContainer.children('img').attr('src'));
+      overlayImg.show();
+      //Hide video
+      overlayVid.attr('src', "");
+      overlayVid.hide();
 
     }else{
-      //Show video and hide img
-      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayImg').attr('src', "");
-      overlay.children(".content").children(".horizontal").children(".mediaContainer").children('.overlayVid').attr('src', selectedImgContainer.children('video').attr('src'));
+      //Show video
+      overlayVid.attr('src', selectedImgContainer.children('video').attr('src'));
+      overlayVid.show();
+      //Hide img
+      overlayImg.attr('src', "");
+      overlayImg.hide();
     }
     //Set description and title
     overlay.children(".content").children('h1').html(selectedImgContainer.children('.desc').children('h3').html());
