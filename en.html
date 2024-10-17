@@ -81,7 +81,7 @@
     <div class="projects">
 
       <div class="section-title">
-        <h2>Projets de cours</h2>
+        <h2>Class projects</h2>
       </div>
 
 
@@ -100,7 +100,7 @@
         <div class="grid">
           <div class="imgContainer large hover">
             <!--Ratio 1.33333333333-->
-            <img loading="lazy" class="media" src="img/Project1/niryo.jpg" alt="Niryo">
+            <img loading="lazy" class="media" src="img/projects/hackathon/niryo.jpg" alt="Niryo">
             <div class="desc">
               <h3>Niryo Ned2</h3>
               <p>
@@ -113,7 +113,7 @@
 
           <div class="imgContainer tall hover">
             <!--Ratio 1.16756706827-->
-            <img loading="lazy" class="media" src="img/Project1/kobuki.jpg" alt="Ecran principal">
+            <img loading="lazy" class="media" src="img/projects/hackathon/kobuki.jpg" alt="Ecran principal">
             <div class="desc">
               <h3>Kobuki</h3>
               <p>The <em>Kobuki robot</em> is a <i>"TurleBot"</i> type robot. We used it to move parts from one point to another in the environment, using its 2D lidar to locate and navigate to specific locations.</p>
@@ -122,7 +122,7 @@
           </div>
 
           <div class="imgContainer large hover">
-            <img loading="lazy" class="media" src="img/Project1/environnement.jpg" alt="Ecran principal">
+            <img loading="lazy" class="media" src="img/projects/hackathon/environnement.jpg" alt="Ecran principal">
             <div class="desc">
               <h3>Environment</h3>
               <p>
@@ -132,7 +132,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project1/deplacement_pieces.jpg" alt="Onglet Mes recettes / Favoris">
+            <img loading="lazy" class="media" src="img/projects/hackathon/deplacement_pieces.jpg" alt="Onglet Mes recettes / Favoris">
             <div class="desc">
               <h3>Moving parts</h3>
               <p>The robot arm had to deposit the parts in the wooden box <i>(cut out at the school fablab)</i> placed on the Kobuki.</p>
@@ -140,7 +140,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project1/slam.jpg" alt="Onglet Mes recettes / Favoris">
+            <img loading="lazy" class="media" src="img/projects/hackathon/slam.jpg" alt="Onglet Mes recettes / Favoris">
             <div class="desc">
               <h3>The map</h3>
               <p>Using a <em>SLAM</em> algorithm, we created a <em>map of the test environment</em> to determine the positions of <em>points of interest</em> and enable the robot to find its way around.</p>
@@ -152,9 +152,67 @@
         <div class="seeMore"><a href="https://robot-ia-hdf.github.io/" target="_blank">More info</a></div>
       </div>
       
+      <div class="project imgProject">
+        <h1>Project #2 - 3D Reconstruction</h1>
+        <p>
+            In April 2024, as part of a robotics and vision module, I participated in a one-week project.
+            <span>
+                <em>Objective:</em> Take multiple shots of a 3D object using a Kuka robotic arm and an Intel RealSense camera to reconstruct the 3D model of the object.
+            </span>
+            <span>
+                <em>Technologies used:</em> ROS2, Python, OpenCV
+            </span>
+        </p>
+        <div class="grid">
+            <div class="imgContainer large hover">
+                <!--Ratio 1.33333333333-->
+                <img loading="lazy" class="media" src="img/projects/tp-robvis/robot-setup.jpg" alt="Kuka robot setup">
+                <div class="desc">
+                    <h3>KUKA KR 5 Sixx R650</h3>
+                    <p>
+                        We used an <em>industrial Kuka robot</em> for this project, equipped with a <em>pneumatic gripper</em>. The object to be scanned was a cube, placed on a base at a specific location.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="imgContainer tall hover">
+                <!--Ratio 1.16756706827-->
+                <img loading="lazy" class="media" src="img/projects/tp-robvis/robot-moving.jpg" alt="Robot movement">
+                <div class="desc">
+                    <h3>Robot Movement</h3>
+                    <p>The robot handled grabbing the piece with its gripper and showing it from different angles to the
+                        <em>Intel RealSense camera</em> positioned above the workspace.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="imgContainer tall hover">
+                <!--Ratio 1.16756706827-->
+                <img loading="lazy" class="media" src="img/projects/tp-robvis/computer-vision.png" alt="Computer vision">
+                <div class="desc">
+                    <h3>Computer Vision</h3>
+                    <p>
+                        A computer vision algorithm detected the color of the cube and measured the distance for each pixel on the face of the cube.
+                    </p>
+                    <span>Click to enlarge</span>
+                </div>
+            </div>
+            <div class="imgContainer large hover">
+                <!--Ratio 1.33333333333-->
+                <img loading="lazy" class="media" src="img/projects/tp-robvis/result.png" alt="Result">
+                <div class="desc">
+                    <h3>Result</h3>
+                    <p>Once the depth data from the different faces were collected, the point clouds had to be merged to create a mesh. The result still needs improvement but is quite satisfactory considering the project's duration.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
       
       <div class="section-title">
-        <h2>Projets personnels</h2>
+        <h2>Personnal projects</h2>
       </div>
 
 
@@ -168,7 +226,7 @@
         <div class="grid">
           <div class="imgContainer large hover">
             <!--Ratio 1.33333333333-->
-            <img loading="lazy" class="media" src="img/Project4/MainMenu.jpg" alt="Main Menu">
+            <img loading="lazy" class="media" src="img/projects/control/MainMenu.jpg" alt="Main Menu">
             <div class="desc">
               <h3>Home Screen</h3>
               <p>This is the first thing the player sees when launching the game.</p>
@@ -178,7 +236,7 @@
     
           <div class="imgContainer medium hover">
             <!--Ratio 0.88396811337-->
-            <img loading="lazy" class="media" src="img/Project4/Options.jpg" alt="Options">
+            <img loading="lazy" class="media" src="img/projects/control/Options.jpg" alt="Options">
             <div class="desc">
               <h3>Options Menu</h3>
               <p>From this menu, the player can <em>adjust controls, graphics settings, and game volume</em>.</p>
@@ -188,7 +246,7 @@
     
           <div class="imgContainer medium hover">
             <!--Ratio 1.79333333333-->
-            <img loading="lazy" class="media" src="img/Project4/LevelSelect.jpg" alt="Level Select">
+            <img loading="lazy" class="media" src="img/projects/control/LevelSelect.jpg" alt="Level Select">
             <div class="desc">
               <h3>Level Selector</h3>
               <p>Only the last unplayed level is accessible to the player.</p>
@@ -198,7 +256,7 @@
     
           <div class="imgContainer large hover">
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project4/Blobby.mp4" alt="Blobby"></video>
+              src="img/projects/control/Blobby.mp4" alt="Blobby"></video>
             <div class="desc">
               <h3>Blobby - The Bouncing Character</h3>
               <p>The player will meet this character, who allows the player to <em>bounce</em> and reach previously inaccessible areas.</p>
@@ -207,7 +265,7 @@
           </div>
     
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project4/Tutorial.gif" alt="Tutorial">
+            <img loading="lazy" class="media" src="img/projects/control/Tutorial.gif" alt="Tutorial">
             <div class="desc">
               <h3>First Tutorial Level</h3>
               <p>This is the first level the player plays. It teaches them the <em>basic movements</em>.</p>
@@ -216,7 +274,7 @@
           </div>
     
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project4/Doubly.jpg" alt="Doubly">
+            <img loading="lazy" class="media" src="img/projects/control/Doubly.jpg" alt="Doubly">
             <div class="desc">
               <h3>Doubly - The Double Jump Character</h3>
               <p>This is the first character the player encounters. They can perform a <em>double jump</em>, allowing them to overcome larger obstacles.</p>
@@ -239,7 +297,7 @@
           <div class="imgContainer large hover">
             <!--Ratio 1.33333333333-->
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project2/Main.mp4" alt="App presentation"></video>
+              src="img/projects/recipes/Main.mp4" alt="App presentation"></video>
             <div class="desc">
               <h3>Overview</h3>
               <p>
@@ -252,7 +310,7 @@
 
           <div class="imgContainer tall hover">
             <!--Ratio 1.16756706827-->
-            <img loading="lazy" class="media" src="img/Project2/Main screen.png" alt="Main screen">
+            <img loading="lazy" class="media" src="img/projects/recipes/Main screen.png" alt="Main screen">
             <div class="desc">
               <h3>Home screen</h3>
               <p>The home screen allows you to access the various functions of the app.</p>
@@ -262,7 +320,7 @@
 
           <div class="imgContainer large hover">
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project2/Recipes.mp4" alt="Recipes screen presentation"></video>
+              src="img/projects/recipes/Recipes.mp4" alt="Recipes screen presentation"></video>
             <div class="desc">
               <h3>Recipes</h3>
               <p>
@@ -274,7 +332,7 @@
           </div>
 
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project2/My recipes.png" alt="My Recipes / Favorites tab">
+            <img loading="lazy" class="media" src="img/projects/recipes/My recipes.png" alt="My Recipes / Favorites tab">
             <div class="desc">
               <h3>My Recipes</h3>
               <p>In this tab, the user can see both the <em>recipes they have created</em> and their <em>favorite recipes</em>.</p>
@@ -283,7 +341,7 @@
           </div>
 
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project2/Random.png" alt="Random Search tab">
+            <img loading="lazy" class="media" src="img/projects/recipes/Random.png" alt="Random Search tab">
             <div class="desc">
               <h3>Random Search</h3>
               <p>In this tab, the user can select the type of recipe they want, and the app will <em>find one randomly</em>.</p>
@@ -304,7 +362,7 @@
         <div class="grid">
           <div class="imgContainer large hover">
             <!--Ratio 1.33333333333-->
-            <img loading="lazy" class="media" src="img/Project3/Settings.jpg" alt="Settings">
+            <img loading="lazy" class="media" src="img/projects/workout-timer/Settings.jpg" alt="Settings">
             <div class="desc">
               <h3>Home Screen</h3>
               <p>This is the first page the user sees when launching the app. They can input their exercise details here.</p>
@@ -314,7 +372,7 @@
     
           <div class="imgContainer medium hover">
             <!--Ratio 0.88396811337-->
-            <img loading="lazy" class="media" src="img/Project3/TimePicker.jpg" alt="Time Picker">
+            <img loading="lazy" class="media" src="img/projects/workout-timer/TimePicker.jpg" alt="Time Picker">
             <div class="desc">
               <h3>Time Picker</h3>
               <p>Uses a <em>JavaScript library</em> for the <em>Time Picker</em>.</p>
@@ -324,7 +382,7 @@
     
           <div class="imgContainer medium hover">
             <!--Ratio 1.79333333333-->
-            <img loading="lazy" class="media" src="img/Project3/SettingsCompleted.jpg" alt="Settings Completed">
+            <img loading="lazy" class="media" src="img/projects/workout-timer/SettingsCompleted.jpg" alt="Settings Completed">
             <div class="desc">
               <h3>Completed Settings</h3>
               <p>Once the settings are filled in, the user can click <em>"START"</em> to begin the workout.</p>
@@ -334,7 +392,7 @@
     
           <div class="imgContainer large hover">
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
-              src="img/Project3/InUse.mp4" alt="App in use"></video>
+              src="img/projects/workout-timer/InUse.mp4" alt="App in use"></video>
             <div class="desc">
               <h3>App in Use</h3>
               <p>
@@ -346,7 +404,7 @@
           </div>
     
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project3/PracticeTime.jpg" alt="Practice Time">
+            <img loading="lazy" class="media" src="img/projects/workout-timer/PracticeTime.jpg" alt="Practice Time">
             <div class="desc">
               <h3>Practice Time</h3>
               <p>The user <em>performs the exercise</em> during the specified time.</p>
@@ -355,7 +413,7 @@
           </div>
     
           <div class="imgContainer medium hover">
-            <img loading="lazy" class="media" src="img/Project3/RestTime.jpg" alt="Rest Time">
+            <img loading="lazy" class="media" src="img/projects/workout-timer/RestTime.jpg" alt="Rest Time">
             <div class="desc">
               <h3>Rest Time</h3>
               <p>The user <em>rests</em> during the specified time.</p>
@@ -403,7 +461,7 @@
             <span>Click to expand</span>
           </div>
           <video loading="lazy" class="media" width="100%" height="100%" muted
-                src="img/Extra-projects/Sorting visualizer.mp4" alt="Sorting visualization"></video>
+                src="img/projects/extra/Sorting visualizer.mp4" alt="Sorting visualization"></video>
         </div>
     
         <div class="experiment-project imgContainer hover">
@@ -412,7 +470,7 @@
             <p>Implementation of the A* pathfinding algorithm, displaying heuristic, real, and total costs.</p>
             <span>Click to expand</span>
           </div>
-          <img class="media" src="img/Extra-projects/Pathfinding.png" alt="A* Pathfinding visualization">
+          <img class="media" src="img/projects/extra/Pathfinding.png" alt="A* Pathfinding visualization">
         </div>
     
         <div class="experiment-project imgContainer hover">
@@ -421,7 +479,7 @@
             <p>Implementation of the double pendulum motion equations using the "Runge-Kutta" method.</p>
             <span>Click to expand</span>
           </div>
-          <img class="media" src="img/Extra-projects/Double Pendulum.png" alt="Double Pendulum">
+          <img class="media" src="img/projects/extra/Double Pendulum.png" alt="Double Pendulum">
         </div>
     
         <div class="experiment-project imgContainer hover">
@@ -430,7 +488,7 @@
             <p>Implementation of a fractal tree generation algorithm using Unity3D.</p>
             <span>Click to expand</span>
           </div>
-          <img class="media" src="img/Extra-projects/Fractal Trees.png" alt="Fractal Trees">
+          <img class="media" src="img/projects/extra/Fractal Trees.png" alt="Fractal Trees">
         </div>
     </div>
     
