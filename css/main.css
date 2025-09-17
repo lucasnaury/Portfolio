@@ -452,14 +452,19 @@ nav .hamburgerToggle.active .line:nth-child(3) {
 .portfolio-section .projects .project .grid .imgContainer.tall .desc span {
   font-size: 13px;
 }
+.portfolio-section .projects .project .grid:last-child {
+  margin-bottom: 6vh;
+}
+.portfolio-section .projects .project:not(:last-child) {
+  margin-bottom: 6vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 .portfolio-section .projects .project .seeMore {
   display: flex;
   width: 100%;
   padding: 1vh 0;
-  margin-bottom: 6vh;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .portfolio-section .projects .project .seeMore a {
   padding: 2vh 1vw;

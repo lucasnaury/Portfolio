@@ -22,7 +22,7 @@
       <a href="#home"><span>Home</span></a>
       <a href="#about-me"><span>About</span></a>
       <a href="#portfolio"><span>Portfolio</span></a>
-      <a href="mailto:lucas.naury@sfr.fr" id="contact"><span>Contact</span></a>
+      <a href="mailto:lucas.naury2@gmail.com" id="contact"><span>Contact</span></a>
       <div class="icons">
         <a href="https://github.com/lucasnaury" target="blank" class="icon"><img src="img/icons/github.svg" alt="Github"></a>
         <a href="https://www.linkedin.com/in/lucasnaury/" target="_blank" class="icon"><img src="img/icons/linkedin.svg"
@@ -42,7 +42,7 @@
       <img loading="lazy" src="img/icons/down-arrow.gif" alt=""></a>
     <div class="title">
       <h1>Looking for</br>a job</h1>
-      <h2>Robotics engineer<br>Starting from september 2025</h2>
+      <h2>Robotics engineer<br>Starting from october 2025</h2>
     </div>
   </section>
 
@@ -87,9 +87,181 @@
         <h2>Academic projects</h2>
       </div>
 
+      <div class="project imgProject">
+        <h1>Project #1 - Optimization of space robot trajectories to reduce disturbances during in-orbit assembly</h1>
+        <p>
+          As part of my thesis at Cranfield University, I developed a motion planning approach aimed at improving the efficiency and reliability of in-orbit assembly (ISA) operations.
+          <span>
+            <em>Objective:</em> Design and validate a <em>trajectory planning</em> algorithm capable of passively limiting the impact of robotic arms on the satellite's orientation,
+            in order to extend the lifetime of In-Orbit Assembly missions while reducing fuel consumption.
+          </span>          
+          <span>
+            <em>Technologies used:</em> ROS2, C++, Python, MoveIt2, Gazebo
+          </span>
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 4/3-->
+            <img loading="lazy" class="media" src="img/projects/irp/MARIO.jpg" alt="MARIO">
+            <div class="desc">
+              <h3>MARIO</h3>
+              <p>
+                <em>MARIO <i>(Multi-Arm Robot for In-Orbit Operations)</i></em> is a 3-arm space robot concept developed by Cranfield University.
+                It is designed to perform <em>In-Orbit Assembly</em> operations, using two robotic arms for locomotion and the third one for manipulating and assembling space components.
+              </p>
+            </div>
+          </div>
+
+
+ 
+          <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->
+            <img loading="lazy" class="media" src="img/projects/irp/slope.png" alt="Slope">
+            <div class="desc">
+              <h3>ASTRA-Lab</h3>
+              <p>MARIO operates in the ASTRA-Lab, which is characterized by an extremely flat floor (± 1.5 mm).</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+         <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->
+            <img loading="lazy" class="media" src="img/projects/irp/air-bearing.jpg" alt="Air bearing">
+            <div class="desc">
+              <h3>Air bearings</h3>
+              <p>
+                By using air bearings in the ASTRA-Lab, with a continuous flow of compressed air directed at the floor, a thin layer of air is created
+                on which the air bearings can glide without friction, thereby recreating microgravity conditions in the plane.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer large hover">
+            <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
+              src="img/projects/irp/mario_moving.mp4" alt="MARIO moving"></video>
+            <div class="desc">
+              <h3>MARIO's movement</h3>
+              <p>
+                MARIO moves along the structure by attaching with one arm and then advancing the other. This cycle is repeated 3 times in our experiment.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/irp/structure.jpeg" alt="Structure">
+            <div class="desc">
+              <h3>Structure</h3>
+              <p>
+                MARIO moves on a structure built from aluminum profiles. This modularity makes it possible to attach elements to the structure, such as
+                docking points for the robotic arms. Several units can be joined together to form a longer structure.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/irp/docking.png" alt="Tab My recipes / Favorites">
+            <div class="desc">
+              <h3>Tool</h3>
+              <p>
+                The two robotic arms used for locomotion are equipped with a <em>docking end-effector</em>. It can be easily mounted thanks to the <em>tool changer</em> system.
+                On the structure, <em>docking points</em> are attached, containing magnetic disks. Thus, by toggling the electromagnet's state, the robot can attach/detach itself from the structure.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
 
       <div class="project imgProject">
-        <h1>Projet #1 - Digital Innovation Hackathon</h1>
+        <h1>Project #2 - Design of a lunar rover for oxygen transport on the Moon</h1>
+        <p>
+          As part of a group project at Cranfield University, we designed a rover and its navigation algorithms, in partnership with the <em>EURO2MOON</em> consortium.
+          <span>
+            <em>Objective:</em> Design the mechanical structure of a lunar rover for oxygen transport on the Moon, as well as the autonomous navigation algorithms it uses.
+            Definition of an ISRU scenario and validation of the algorithms on this scenario, by calculating the best paths between the different points of interest.
+          </span>          
+          <span>
+            <em>Technologies used:</em> ROS2, Python, Nav2, Gazebo, A*
+          </span>
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 4/3-->
+            <img loading="lazy" class="media" src="img/projects/gdp/rover-design.png" alt="Rover design">
+            <div class="desc">
+              <h3>Rover design</h3>
+              <p>
+                The mechanical design of the rover is a robot with 4 driving wheels, mounted on reconfigurable legs, capable of carrying a payload of 50 kg.
+                This locomotion system allows it to move in rough terrain and steep slopes.
+              </p>
+            </div>
+          </div>
+
+          <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->
+            <img loading="lazy" class="media" src="img/projects/gdp/nav-architecture.png" alt="Tab My recipes / Favorites">
+            <div class="desc">
+              <h3>Autonomous navigation architecture</h3>
+              <p>
+                Global planning, based on satellite images, is carried out offline to exploit Earth's computing power. Pre-calculated routes are stored on the rover and loaded when needed.
+                Local planning, on the other hand, runs in real time to avoid obstacles detected by the sensors.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->  
+            <img loading="lazy" class="media" src="img/projects/gdp/global-planning-architecture.png" alt="Tab My recipes / Favorites">
+            <div class="desc">
+              <h3>Global planning</h3>
+              <p>
+                For global planning, we use the <em>A*</em> algorithm, with a cost function that takes into account: <em>distance traveled</em>, <em>slopes</em>, <em>illumination</em> and <em>steering</em>.
+                Thus, the paths found minimize distance while avoiding craters and shadowed areas.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer large hover">
+            <img loading="lazy" class="media" src="img/projects/gdp/global-planning-results.png" alt="Global planning results">
+            <div class="desc">
+              <h3>Results - Global planning</h3>
+              <p>
+                Whatever the configuration of the ISRU units, the rover is able to find a path between the different points of interest, avoiding craters.
+                The greater the distance to cover, the longer the execution time, but it remains reasonable since it is executed offline.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/gdp/local-planning-architecture.png" alt="Tab My recipes / Favorites">
+            <div class="desc">
+              <h3>Local planning</h3>
+              <p>
+                Local planning uses a <em>stereo camera</em> and a <em>3D lidar</em> to perceive its environment and create a cost map.
+                This cost map is then used by the <em>DWB algorithm</em> to avoid obstacles.
+              </p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/gdp/local-planning-results.png" alt="Tab My recipes / Favorites">
+            <div class="desc">
+              <h3>Results - Local planning</h3>
+              <p>The rover manages to avoid different obstacles on its way while following the global path.</p>
+              <span>Click to expand</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="seeMore"><a href="https://robot-ia-hdf.github.io/" target="_blank">Learn more</a></div>
+      </div>
+
+
+      <div class="project imgProject">
+        <h1>Projet #3 - Digital Innovation Hackathon</h1>
         <p>
           In January 2024, I had the opportunity to take part in the <em>Digital Innovation Hackathon</em> organised by my school <i>(IMT Nord Europe)</i> in partnership with CITC and ENSAM Lille.
           <span>
@@ -156,7 +328,7 @@
       </div>
       
       <div class="project imgProject">
-        <h1>Project #2 - 3D Reconstruction</h1>
+        <h1>Project #4 - 3D Reconstruction</h1>
         <p>
             In April 2024, as part of a robotics and vision module, I participated in a one-week project.
             <span>
@@ -197,7 +369,7 @@
                     <p>
                         A computer vision algorithm detected the color of the cube and measured the distance for each pixel on the face of the cube.
                     </p>
-                    <span>Click to enlarge</span>
+                    <span>Click to expand</span>
                 </div>
             </div>
             <div class="imgContainer large hover">

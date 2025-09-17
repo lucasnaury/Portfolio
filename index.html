@@ -22,7 +22,7 @@
       <a href="#home"><span>Accueil</span></a>
       <a href="#about-me"><span>A propos</span></a>
       <a href="#portfolio"><span>Portfolio</span></a>
-      <a href="mailto:lucas.naury@sfr.fr" id="contact"><span>Contact</span></a>
+      <a href="mailto:lucas.naury2@gmail.com" id="contact"><span>Contact</span></a>
       <div class="icons">
         <a href="https://github.com/lucasnaury" target="blank" class="icon"><img src="img/icons/github.svg" alt="Github"></a>
         <a href="https://www.linkedin.com/in/lucasnaury/" target="_blank" class="icon"><img src="img/icons/linkedin.svg"
@@ -42,7 +42,7 @@
       <img loading="lazy" src="img/icons/down-arrow.gif" alt=""></a>
     <div class="title">
       <h1>Recherche</br>D'emploi</h1>
-      <h2>Ingénieur robotique</br>A partir de septembre 2025</h2>
+      <h2>Ingénieur robotique</br>A partir d'octobre 2025</h2>
     </div>
   </section>
 
@@ -59,7 +59,7 @@
     </div>
     <div class="content">
       <p>
-        Actuellement en double diplôme à Cranfield University (<em>MSc Robotics</em>) dans le cadre de ma dernière année de cycle ingénieur à l'IMT Nord-Europe, je suis à la recherche d'un poste d'<em>ingénieur en robotique</em> à partir de </em>septembre 2025</em>.
+        Fraîchement diplômé d'un double diplôme entre Cranfield University (<em>MSc Robotics</em>) et l'IMT Nord-Europe (cycle ingénieur), je suis à la recherche d'un poste d'<em>ingénieur en robotique</em> à partir de </em>septembre 2025</em>.
       </p>
       <p>
         Depuis toujours, je suis passionné par l'informatique. À l'aide de cours en ligne, j'ai appris différents
@@ -90,7 +90,178 @@
 
 
       <div class="project imgProject">
-        <h1>Projet #1 - Hackathon Digital Innovation</h1>
+        <h1>Projet #1 - Optimisation des trajectoires d'un robot spatial pour réduire les perturbations pendant l'assemblage en orbite</h1>
+        <p>
+          Dans le cadre de mon mémoire à Cranfield University, j'ai développé une approche de planification de mouvement destinée à améliorer l'efficacité et la fiabilité des opérations d'assemblage en orbite (In-Orbit Assembly, ISA).
+          <span>
+            <em>L'objectif :</em> Concevoir et valider un algorithme de <em>planification de trajectoires</em> capable de limiter passivement l'impact des bras robotiques sur l'orientation du satellite,
+            afin de prolonger la durée de vie des missions d'In-Orbit Assembly, tout en réduisant la consommation de carburant.
+          </span>          
+          <span>
+            <em>Technologies utilisées :</em> ROS2, C++, Python, MoveIt2, Gazebo
+          </span>
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 4/3-->
+            <img loading="lazy" class="media" src="img/projects/irp/MARIO.jpg" alt="MARIO">
+            <div class="desc">
+              <h3>MARIO</h3>
+              <p>
+                <em>MARIO <i>(Multi-Arm Robot for In-Orbit Operations)</i></em> est un concept de robot spatial à <em>3 bras</em> développé par Cranfield University.
+                Il est conçu pour effectuer des opérations d'<em>assemblage en orbite</em>, en utilisant deux bras robotiques pour se déplacer, et le troisième pour manipuler et assembler des composants spatiaux.
+              </p>
+            </div>
+          </div>
+
+
+ 
+          <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->
+            <img loading="lazy" class="media" src="img/projects/irp/slope.png" alt="Slope">
+            <div class="desc">
+              <h3>ASTRA-Lab</h3>
+              <p>MARIO évolue dans l'ASTRA-Lab, qui a la particularité d'avoir un sol extrêmement plat (± 1,5mm).</p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+         <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->
+            <img loading="lazy" class="media" src="img/projects/irp/air-bearing.jpg" alt="Air bearing">
+            <div class="desc">
+              <h3>Air bearings</h3>
+              <p>
+                En utilisant des "air bearings" dans l'ASTRA-Lab, avec un flux d'air compressé continu dirigé vers le sol, cela créé une fine couche d'air
+                sur laquelle les "air bearings" peuvent glisser sans friction, récréant ainsi les conditions de la micro-gravité dans le plan.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer large hover">
+            <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
+              src="img/projects/irp/mario_moving.mp4" alt="MARIO moving"></video>
+            <div class="desc">
+              <h3>Mouvement de MARIO</h3>
+              <p>
+                MARIO se déplace sur la structure en utilisant s'attachant avec un bras puis en avançant l'autre. Ce cycle est répété 3 fois dans notre expérience.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/irp/structure.jpeg" alt="Structure">
+            <div class="desc">
+              <h3>Structure</h3>
+              <p>
+                MARIO se déplace sur une structure construite à partir de profilés aluminium. Cette modularité permet d'attacher des éléments à la structure tels que
+                des points d'attaches pour les bras robotiques. Plusieurs unités peuvent être attachées ensemble pour former une plus longue structure.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/irp/docking.png" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>Outil</h3>
+              <p>
+                Les 2 bras robot utilisés pour se déplacer sont équipés d'un <em>"Docking end-effector"</em>. Celui-ci se monte facilement grâce au système de <em>tool changer</em>.
+                Sur la structure, sont attachés des <em>"Docking points"</em>, qui contiennent des disques magnétiques. Ainsi, en agissant sur l'état de l'électroaimant, on peut s'attacher/se détacher de la structure.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project imgProject">
+        <h1>Projet #2 - Design d'un rover lunaire pour le transport d'oxygène sur la Lune</h1>
+        <p>
+          Dans le cadre d'un projet de groupe à Cranfield University, nous avons conçu un rover et ses algorithmes de navigation, en partenariat avec le consortium <em>EURO2MOON</em>.
+          <span>
+            <em>L'objectif :</em> Concevoir un le design mécanique d'un rover lunaire pour le transport d'oxygène sur la Lune ainsi que les algorithmes de navigation autonomes qu'il utilise. Définition d'un scénario ISRU et validation des algorithmes sur ce scénario, en calculant les meilleurs chemins entres les
+            différents points d'intérêt.
+          </span>          
+          <span>
+            <em>Technologies utilisées :</em> ROS2, Python, Nav2, Gazebo, A*
+          </span>
+        </p>
+        <div class="grid">
+          <div class="imgContainer large hover">
+            <!--Ratio 4/3-->
+            <img loading="lazy" class="media" src="img/projects/gdp/rover-design.png" alt="Design du rover">
+            <div class="desc">
+              <h3>Design du rover</h3>
+              <p>
+                Le design mécanique du rover est un robot avec 4 roues motrices, montées sur des jambes reconfigurables, capable de transporter une charge utile de 50 kg.
+                Ce type de locomotion permet au robot de se déplacer dans des terrains accidentés et des pentes raides.
+              </p>
+            </div>
+          </div>
+
+          <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->
+            <img loading="lazy" class="media" src="img/projects/gdp/nav-architecture.png" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>Architecture de navigation autonome</h3>
+              <p>
+                Le global planning, basé sur des images satellites, est effectué offline pour exploiter la puissance de calcul terrestre. Les trajets pré-calculés sont stockés
+                sur le rover et chargés au besoin. Le local planning, lui, s'exécute en temps réel pour éviter les obstacles détectés par les capteurs.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <!--Ratio 16/9-->  
+            <img loading="lazy" class="media" src="img/projects/gdp/global-planning-architecture.png" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>Global planning</h3>
+              <p>
+                Pour le global planning, nous utilisons l'<em>algorithme A*</em>, avec une cost function qui prend en compte: la <em>distance parcourue</em>, les <em>pentes</em>, l'<em>illumination</em> et l'<em>angle de rotation</em>.
+                Ainsi, les chemins trouvés minimisent la distance tout en évitant les cratères et les zones d'ombre.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+
+          <div class="imgContainer large hover">
+            <img loading="lazy" class="media" src="img/projects/gdp/global-planning-results.png" alt="Resultats du global planning">
+            <div class="desc">
+              <h3>Resultats - Global planning</h3>
+              <p>
+                Quelle que soit la configuration des unités ISRU, le rover est capable de trouver un chemin entre les différents points d'intérêt, qui évite les cratères.
+                Plus la distance à couvrir est importante, plus le temps d'éxécution est important, mais il reste raisonable étant donné qu'il est éxécuté offline.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/gdp/local-planning-architecture.png" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>Local planning</h3>
+              <p>
+                Le local planning utilise une <em>stéréocaméra</em> et un <em>lidar 3D</em> pour percevoir son environment et créer une cost map.
+                Cette costmap est ensuite utilisée par l'<em>algorithme DWB</em> pour counterner les obstacles.
+              </p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+          <div class="imgContainer medium hover">
+            <img loading="lazy" class="media" src="img/projects/gdp/local-planning-results.png" alt="Onglet Mes recettes / Favoris">
+            <div class="desc">
+              <h3>Résultats - Local planning</h3>
+              <p>Le rover arrive à esquiver les différents obstacles sur son chemin tout en suivant le global path.</p>
+              <span>Cliquer pour afficher en grand</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="seeMore"><a href="https://robot-ia-hdf.github.io/" target="_blank">En savoir plus</a></div>
+      </div>
+
+      <div class="project imgProject">
+        <h1>Projet #3 - Hackathon Digital Innovation</h1>
         <p>
           En janvier 2024, j'ai eu l'occasion de participer au <em>Hackathon Digital Innovation</em> organisé par mon école <i>(IMT Nord Europe)</i> en partenariat avec la CITC et l'ENSAM Lille.
           <span>
@@ -103,7 +274,7 @@
         </p>
         <div class="grid">
           <div class="imgContainer large hover">
-            <!--Ratio 1.33333333333-->
+            <!--Ratio 4/3-->
             <img loading="lazy" class="media" src="img/projects/hackathon/niryo.jpg" alt="Niryo">
             <div class="desc">
               <h3>Niryo Ned2</h3>
@@ -155,7 +326,7 @@
       </div>
 
       <div class="project imgProject">
-        <h1>Projet #2 - Reconstruction 3D</h1>
+        <h1>Projet #4 - Reconstruction 3D</h1>
         <p>
           En avril 2024, dans le cadre d'un module de robotique et vision, j'ai participé à un projet d'une durée d'une semaine.
           <span>
@@ -168,7 +339,7 @@
         </p>
         <div class="grid">
           <div class="imgContainer large hover">
-            <!--Ratio 1.33333333333-->
+            <!--Ratio 4/3-->
             <img loading="lazy" class="media" src="img/projects/tp-robvis/robot-setup.jpg" alt="Kuka robot setup">
             <div class="desc">
               <h3>KUKA KR 5 Sixx R650</h3>
@@ -185,7 +356,7 @@
             <div class="desc">
               <h3>Déplacement du robot</h3>
               <p>Le robot s'occupait d'attraper la pièce avec son préhenseur, et de la montrer sous différents angles à la
-                <em>caméra Intel RealSense</em> disposée au dessus du plan de travail
+                <em>caméra Intel RealSense</em> disposée au dessus du plan de travail.
               </p>
             </div>
           </div>
@@ -203,7 +374,7 @@
             </div>
           </div>
           <div class="imgContainer large hover">
-            <!--Ratio 1.33333333333-->
+            <!--Ratio 4/3-->
             <img loading="lazy" class="media" src="img/projects/tp-robvis/result.png" alt="Résultat">
             <div class="desc">
               <h3>Résultat</h3>
@@ -234,7 +405,7 @@
         </p>
         <div class="grid">
           <div class="imgContainer large hover">
-            <!--Ratio 1.33333333333-->
+            <!--Ratio 4/3-->
             <img loading="lazy" class="media" src="img/projects/control/MainMenu.jpg" alt="Main Menu">
             <div class="desc">
               <h3>Ecran d'accueil</h3>
@@ -244,7 +415,7 @@
           </div>
 
           <div class="imgContainer medium hover">
-            <!--Ratio 0.88396811337-->
+            <!--Ratio 16/9-->
             <img loading="lazy" class="media" src="img/projects/control/Options.jpg" alt="Options">
             <div class="desc">
               <h3>Menu Options</h3>
@@ -254,7 +425,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <!--Ratio 1.79333333333-->
+            <!--Ratio 16/9-->
             <img loading="lazy" class="media" src="img/projects/control/LevelSelect.jpg" alt="Level Select">
             <div class="desc">
               <h3>Sélecteur de niveaux</h3>
@@ -307,7 +478,7 @@
         </p>
         <div class="grid">
           <div class="imgContainer large hover">
-            <!--Ratio 1.33333333333-->
+            <!--Ratio 4/3-->
             <video loading="lazy" class="media" width="100%" height="100%" muted autoplay loop
               src="img/projects/recipes/Main.mp4" alt="Présentation de l'application"></video>
             <div class="desc">
@@ -380,7 +551,7 @@
         </p>
         <div class="grid">
           <div class="imgContainer large hover">
-            <!--Ratio 1.33333333333-->
+            <!--Ratio 4/3-->
             <img loading="lazy" class="media" src="img/projects/workout-timer/Settings.jpg" alt="Settings">
             <div class="desc">
               <h3>Ecran d'accueil</h3>
@@ -400,7 +571,7 @@
             </div>
           </div>
           <div class="imgContainer medium hover">
-            <!--Ratio 1.79333333333-->
+            <!--Ratio 16/9-->
             <img loading="lazy" class="media" src="img/projects/workout-timer/SettingsCompleted.jpg" alt="Settings Completed">
             <div class="desc">
               <h3>Paramètres remplis</h3>

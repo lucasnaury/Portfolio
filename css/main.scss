@@ -540,16 +540,23 @@ nav{
           }
         }
 
-
+        &:last-child{
+          margin-bottom: 6vh;
+        }
       }
+
+
+      &:not(:last-child){
+        margin-bottom: 6vh;
+        border-bottom: 1px solid transparentize($white, 0.8);
+      }
+
       .seeMore{
         display: flex;
         width: 100%;
         padding: 1vh 0;
-        margin-bottom: 6vh;
         align-items: center;
         justify-content: center;
-        border-bottom: 1px solid transparentize($white, 0.8);
 
         a{
           padding: 2vh 1vw;
