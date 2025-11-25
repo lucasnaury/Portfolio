@@ -186,9 +186,15 @@ nav{
       text-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
     h2{
-      margin: 20px 10px;
+      margin: 20px 10px 5px;
       line-height: 1.35em;
       font-size: 35px;
+    }
+    h3{
+      margin: 10px 10px 20px;
+      font-size: 22px;
+      font-weight: $light;
+      color: rgba(255,255,255,0.5);
     }
 
   }
@@ -236,6 +242,7 @@ nav{
         top: 0; left: 0;
         width: 100%; height: 100%;
         background-image: url('../img/about.jpg');
+        background-image: url('../img/about-new.jpg');
         filter: brightness(0.25);
         background-position: center;
         background-size: cover;
@@ -858,13 +865,16 @@ footer{
         background-image:linear-gradient(180deg, rgba(21,21,21,0) 0%, rgba(21,21,21,0) 80%, rgba(21,21,21,1) 95%);
       }
       .title{
-        top: 70%;
+        top: 50%;
         h1{
           font-size: 110px;
           line-height: 120px;
         }
         h2{
           font-size: 25px;
+        }
+        h3{
+          font-size: 18px;
         }
       }
       .scroll-down-indicator{
@@ -1026,7 +1036,7 @@ footer{
       background-image:linear-gradient(180deg, rgba(21,21,21,0) 0%, rgba(21,21,21,0) 85%, rgba(21,21,21,1) 95%);
     }
     .title{
-      top: 70%;
+      top: 60%;
       h1{
         font-size: 10vw;
         line-height: 11vw;
@@ -1034,6 +1044,9 @@ footer{
       h2{
         font-size: 2.5vw;
       }
+      h3{
+        font-size: 1.8vw;
+      } 
     }
   }
   .about_me-section{
@@ -1077,6 +1090,11 @@ footer{
   }
 }
 @media (max-width: 850px){
+  .header-section{
+    .title{
+      top: 70%;
+    }
+  }
   .portfolio-section{
     .experiment-projects.three-col{
       grid-template-columns: repeat(2,1fr);
